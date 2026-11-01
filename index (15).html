@@ -1,0 +1,1097 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ABRC Formula 1 League</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="ABRC F1">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0B0B0F">
+<meta name="robots" content="noindex, nofollow">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAADJUlEQVR4nO3dPW4USxhAUfxERMIjYFGsmG0REZMgaxBcJLrrb6xzFoBaVXe+auwpePn46fM7+JP/dj8A5xIHSRwkcZDEQRIHSRwkcZDEQRIHSRwkcZDEQRIHSRwkcZDEQXq/+wF+8e3Lh92PsN//X7/vfoSfXrZ/TVAQf7E3lG1xaOKfbKlkdRyauGllJUtfSJVx38o1XDQ5ZDHcghGyYnIoY4YFqzp3cshigXkjZOLkUMYa89Z5VhzKWGnSak+JQxnrzVjz8XEoY5fhKz84DmXsNXb9R8ahjBMM3AW/sicNi8PYOMeovRgThzJOM2RHHCukAXEYG2e6vy9341DGyW7ujmOFJA7SrTicKee7s0cmB0kcpOtxOFOexeWdMjlI4iCJg3QxDi8cz+XafpkcJHGQxEE66x9veTTjItfwV6UhD3nsC5zJQRIHSRwkcZDEQRIHSRwkcZDEQRIHSRwkcZDEQRIHSRwkcZDEQRIHSRwkcZDEQRIHSRwkcZDEQRIH6dzrkDOc89/EP4Vz4zjzXuvvjr3pep9jhSQOkjhI4iCJgyQOkjhI4iCJgyQOkjhI4iCJgyQOkjhI4iCJgyQOkjhI4iCJgyQOkjhI4iCJgyQO0rnXIZ/lXuv95zz2QuW5cczwLPdvD+FYIYmDJA6SOEjiIImDJA6SOEjiIImDJA6SOEjiIImDJA6SOEjiIImDJA6SOEjiIJ377fNjv7D/6Cke8jKTgyQOkjhI4iBdjONtXwN8e67tl8lBEgdJHKTrcXjteBaXd8rkIImDdCsOJ8v57uyRyUESB+luHE6Wk93cnQGTQx9nur8vjhXSmDgMj9MM2ZFhk0Mf5xi1F44V0sg4DI8TDNyFwZNDH3uNXf/xx4o+dhm+8lPeOfSx3ow1n/VCqo+VJq32xL+t6GONeev88vHT50l/9Ku3fWdwo9kfvxU/5zBCZliwqismxysjZIhlH7alPyE1Qu5buYZLJ8cjU+SfbPlcbYvjlUr+Yu+s3R/HI6G82x3Eo7Pi4Ch+ZU8SB0kcJHGQxEESB0kcJHGQxEESB0kcJHGQxEESB0kcJHGQfgAOrZUqyIkNnwAAAABJRU5ErkJggg==">
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAADJUlEQVR4nO3dPW4USxhAUfxERMIjYFGsmG0REZMgaxBcJLrrb6xzFoBaVXe+auwpePn46fM7+JP/dj8A5xIHSRwkcZDEQRIHSRwkcZDEQRIHSRwkcZDEQRIHSRwkcZDEQXq/+wF+8e3Lh92PsN//X7/vfoSfXrZ/TVAQf7E3lG1xaOKfbKlkdRyauGllJUtfSJVx38o1XDQ5ZDHcghGyYnIoY4YFqzp3cshigXkjZOLkUMYa89Z5VhzKWGnSak+JQxnrzVjz8XEoY5fhKz84DmXsNXb9R8ahjBMM3AW/sicNi8PYOMeovRgThzJOM2RHHCukAXEYG2e6vy9341DGyW7ujmOFJA7SrTicKee7s0cmB0kcpOtxOFOexeWdMjlI4iCJg3QxDi8cz+XafpkcJHGQxEE66x9veTTjItfwV6UhD3nsC5zJQRIHSRwkcZDEQRIHSRwkcZDEQRIHSRwkcZDEQRIHSRwkcZDEQRIHSRwkcZDEQRIHSRwkcZDEQRIH6dzrkDOc89/EP4Vz4zjzXuvvjr3pep9jhSQOkjhI4iCJgyQOkjhI4iCJgyQOkjhI4iCJgyQOkjhI4iCJgyQOkjhI4iCJgyQOkjhI4iCJgyQO0rnXIZ/lXuv95zz2QuW5cczwLPdvD+FYIYmDJA6SOEjiIImDJA6SOEjiIImDJA6SOEjiIImDJA6SOEjiIImDJA6SOEjiIJ377fNjv7D/6Cke8jKTgyQOkjhI4iBdjONtXwN8e67tl8lBEgdJHKTrcXjteBaXd8rkIImDdCsOJ8v57uyRyUESB+luHE6Wk93cnQGTQx9nur8vjhXSmDgMj9MM2ZFhk0Mf5xi1F44V0sg4DI8TDNyFwZNDH3uNXf/xx4o+dhm+8lPeOfSx3ow1n/VCqo+VJq32xL+t6GONeev88vHT50l/9Ku3fWdwo9kfvxU/5zBCZliwqismxysjZIhlH7alPyE1Qu5buYZLJ8cjU+SfbPlcbYvjlUr+Yu+s3R/HI6G82x3Eo7Pi4Ch+ZU8SB0kcJHGQxEESB0kcJHGQxEESB0kcJHGQxEESB0kcJHGQfgAOrZUqyIkNnwAAAABJRU5ErkJggg==">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;1,700;1,800;1,900&family=Inter:wght@400;500;600;700&family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F3F3F5; --surface:#FFFFFF; --sunk:#ECECF0; --line:#DADAE0; --text:#101014; --muted:#5A5A66;
+  --accent:#D10A1C; --accent-ink:#FFFFFF; --accent-soft:#FDE6E8; --accent-text:#B00818; --hero-a:#D10A1C; --hero-b:#7A0612;
+  --pos:#00875A; --pos-soft:#DDF5EA; --neg:#C2410C; --warn:#8A6A00; --warn-soft:#FBF1CC; --purple:#7E22CE; --purple-soft:#F1E6FC;
+  --chip:#ECECF0; --wa:#1FA855; --wa-ink:#FFFFFF; --carbon:transparent;
+  color-scheme: light;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0B0B0F; --surface:#15151C; --sunk:#101016; --line:#272731; --text:#FFFFFF; --muted:#9C9CAB;
+    --accent:#E10A1E; --accent-ink:#FFFFFF; --accent-soft:#2B0D12; --accent-text:#FF4D5E; --hero-a:#E10A1E; --hero-b:#5E0610;
+    --pos:#19D67A; --pos-soft:#0E2B1D; --neg:#FF7A45; --warn:#FFD60A; --warn-soft:#2B2508; --purple:#C27BFF; --purple-soft:#24133A;
+    --chip:#22222B; --wa:#25D366; --wa-ink:#0B0B0F; --carbon:rgba(255,255,255,.018); color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0B0B0F; --surface:#15151C; --sunk:#101016; --line:#272731; --text:#FFFFFF; --muted:#9C9CAB;
+  --accent:#E10A1E; --accent-ink:#FFFFFF; --accent-soft:#2B0D12; --accent-text:#FF4D5E; --hero-a:#E10A1E; --hero-b:#5E0610;
+  --pos:#19D67A; --pos-soft:#0E2B1D; --neg:#FF7A45; --warn:#FFD60A; --warn-soft:#2B2508; --purple:#C27BFF; --purple-soft:#24133A;
+  --chip:#22222B; --wa:#25D366; --wa-ink:#0B0B0F; --carbon:rgba(255,255,255,.018); color-scheme: dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background-color:var(--bg);background-image:repeating-linear-gradient(45deg,var(--carbon) 0 2px,transparent 2px 6px),repeating-linear-gradient(-45deg,var(--carbon) 0 2px,transparent 2px 6px);color:var(--text);font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Noto Color Emoji';font-variant-numeric:tabular-nums;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+a{color:var(--accent-text)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.app{max-width:480px;margin:0 auto;min-height:100%;padding:0 16px calc(96px + env(safe-area-inset-bottom,0px));}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);display:flex;align-items:center;gap:10px;min-height:56px;margin:0 -16px;padding:0 16px;border-bottom:1px solid var(--line)}
+.mark{flex:none;width:28px;height:28px}
+.brand{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;font-size:19px;letter-spacing:.04em;line-height:1}
+.brand small{display:block;font-family:Inter,sans-serif;font-weight:500;font-size:11px;letter-spacing:0;color:var(--muted);margin-top:2px}
+.spacer{flex:1}
+.tag{display:inline-flex;align-items:center;gap:6px;min-height:24px;padding:0 9px;border-radius:999px;font-size:12px;font-weight:600;background:var(--chip);color:var(--muted)}
+.tag.ok{background:var(--pos-soft);color:var(--pos)}
+.tag.warn{background:var(--warn-soft);color:var(--warn)}
+.tag.acc{background:var(--accent-soft);color:var(--accent-text)}
+.back{width:44px;height:44px;margin-left:-10px;border:0;background:transparent;display:flex;align-items:center;justify-content:center;border-radius:10px}
+h1,h2,h3{margin:0}
+.display{font-family:'Barlow Condensed','Arial Narrow',sans-serif;font-weight:700;line-height:.95}
+.screen{display:flex;flex-direction:column;gap:16px;padding-top:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px}
+.label{font-size:13px;font-weight:600;color:var(--muted)}
+.muted{color:var(--muted)}
+.small{font-size:13px}
+.row{display:flex;align-items:center;gap:12px}
+.col{display:flex;flex-direction:column}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 18px;border-radius:12px;border:0;font-weight:700;font-size:15px;text-decoration:none}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{background:transparent;border:1px solid var(--line);color:var(--text);font-weight:600}
+.btn.wa{background:var(--wa);color:var(--wa-ink)}
+.btn[disabled]{background:var(--chip);color:var(--muted);cursor:not-allowed;border:0}
+.btn.block{width:100%}
+.btn.sm{min-height:40px;padding:0 12px;font-size:13px;border-radius:9px}
+.seg{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:4px;padding:4px;border-radius:12px;background:var(--sunk);border:1px solid var(--line)}
+.seg button{min-height:44px;border:0;border-radius:9px;background:transparent;color:var(--muted);font-weight:600;font-size:14px;padding:4px 6px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px}
+.seg button[aria-selected="true"],.seg button[aria-pressed="true"]{background:var(--surface);color:var(--text);box-shadow:0 1px 0 var(--line)}
+.seg small{font-size:11px;font-weight:600}
+.chipbar{flex:none;width:4px;border-radius:2px}
+.slot{display:flex;align-items:center;gap:12px;width:100%;min-height:64px;padding:10px 12px;border-radius:12px;border:1px solid var(--line);background:var(--surface);text-align:left}
+.slot .pos{flex:none;width:44px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:22px}
+.slot .pos.sm{font-size:16px;letter-spacing:.02em}
+.slot .name{font-size:16px;font-weight:600}
+.slot .name.empty{color:var(--muted)}
+.slot .pts{font-size:12px;font-weight:600;color:var(--muted);white-space:nowrap}
+.teampill{display:inline-flex;align-items:center;gap:6px;min-height:22px;padding:0 8px;border-radius:999px;background:var(--chip);font-size:12px;font-weight:600}
+.dot{width:8px;height:8px;border-radius:4px;flex:none}
+.list{display:flex;flex-direction:column;gap:8px}
+.tbl-row{display:grid;align-items:center;gap:8px;min-height:52px;border-top:1px solid var(--line)}
+.tbl-row:first-child{border-top:0}
+.big{font-family:'Barlow Condensed',sans-serif;font-weight:700}
+.up{color:var(--pos);font-weight:700;font-size:13px}
+.down{color:var(--neg);font-weight:700;font-size:13px}
+.same{color:var(--muted);font-weight:700;font-size:13px}
+.avatar{flex:none;width:32px;height:32px;border-radius:16px;display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:#0F1115}
+.nav{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--surface);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px)}
+.nav-in{max-width:480px;margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr)}
+.nav a{min-height:60px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;color:var(--muted);text-decoration:none;font-size:11px;font-weight:600}
+.nav a[aria-current="page"]{color:var(--accent-text)}
+.dock{position:fixed;left:0;right:0;bottom:calc(61px + env(safe-area-inset-bottom,0px));z-index:15;background:var(--bg);border-top:1px solid var(--line)}
+.dock-in{max-width:480px;margin:0 auto;padding:10px 16px}
+.has-dock .app{padding-bottom:calc(170px + env(safe-area-inset-bottom,0px))}
+.sheet-wrap{position:fixed;inset:0;z-index:40;background:rgba(5,6,8,.55);display:flex;align-items:flex-end;justify-content:center}
+.sheet{width:100%;max-width:480px;max-height:85vh;background:var(--surface);border-radius:20px 20px 0 0;display:flex;flex-direction:column;padding-bottom:env(safe-area-inset-bottom,0px)}
+.sheet-head{display:flex;align-items:center;justify-content:space-between;padding:14px 8px 6px 20px}
+.sheet-list{overflow-y:auto;padding-bottom:16px}
+.opt{display:flex;align-items:center;gap:12px;width:100%;min-height:56px;padding:8px 20px;border:0;border-top:1px solid var(--line);background:transparent;text-align:left}
+.opt[aria-selected="true"]{background:var(--sunk)}
+.opt[disabled]{opacity:.45;cursor:not-allowed}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.gcell{display:flex;align-items:center;gap:8px;padding:6px 8px;border-radius:8px;background:var(--sunk);border-top:2px solid var(--line);min-width:0}
+.gcell:nth-child(even){transform:translateY(12px)}
+.switch{flex:none;width:48px;height:28px;border-radius:14px;border:0;padding:3px;display:flex;background:var(--chip)}
+.switch span{width:22px;height:22px;border-radius:11px;background:var(--muted)}
+.switch[aria-checked="true"],.switch[aria-pressed="true"]{justify-content:flex-end;background:var(--accent)}
+.switch[aria-checked="true"] span,.switch[aria-pressed="true"] span{background:var(--accent-ink)}
+.check{display:flex;align-items:center;gap:10px;font-size:14px}
+.ic{flex:none;width:28px;height:28px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px}
+.ic.ok{background:var(--pos-soft);color:var(--pos)}
+.ic.warn{background:var(--warn-soft);color:var(--warn)}
+textarea,input[type=text],input[type=time],select{width:100%;min-height:44px;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--sunk)}
+textarea{min-height:320px;line-height:1.5;resize:vertical}
+.toast{position:fixed;left:50%;bottom:calc(140px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:50;background:var(--text);color:var(--bg);padding:10px 16px;border-radius:12px;font-size:14px;font-weight:600}
+.banner{display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:12px;background:var(--accent-soft);color:var(--accent-text);font-size:13px;font-weight:600}
+.menu a,.menu button{display:flex;align-items:center;gap:12px;width:100%;min-height:56px;padding:8px 4px;border:0;border-top:1px solid var(--line);background:transparent;color:var(--text);text-decoration:none;text-align:left}
+.menu > :first-child{border-top:0}
+.chev{margin-left:auto;color:var(--muted)}
+.stepper{display:flex;align-items:center;gap:4px}
+.stepper button{width:40px;height:40px;border-radius:10px;border:1px solid var(--line);background:var(--surface);font-size:20px;font-weight:600;line-height:1}
+.stepper output{min-width:44px;text-align:center;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:22px}
+.stepper output.changed{color:var(--accent-text)}
+
+/* racing look */
+.display{font-style:italic;font-weight:800;text-transform:uppercase;letter-spacing:.01em}
+.big{font-style:italic;font-weight:800}
+.brand{font-style:italic;font-weight:800;text-transform:uppercase;letter-spacing:.03em}
+.top{border-bottom:0;background:var(--bg)}
+.top::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:6px;background:conic-gradient(var(--text) 25%,transparent 0 50%,var(--text) 0 75%,transparent 0) 0 0/12px 12px;opacity:.85}
+.label{text-transform:uppercase;letter-spacing:.08em;font-size:12px}
+.card{border-radius:12px}
+.tag{border-radius:4px;text-transform:uppercase;letter-spacing:.04em;font-size:11px}
+.btn{border-radius:8px;text-transform:uppercase;letter-spacing:.04em;font-style:italic;font-weight:800}
+.btn.sm{font-size:12px}
+.btn.primary{box-shadow:0 6px 18px -8px var(--accent)}
+.slot{border-radius:10px;position:relative;overflow:hidden}
+.slot .pos{width:46px;height:38px;flex:none;display:flex;align-items:center;justify-content:center;background:var(--text);color:var(--bg);transform:skewX(-12deg);border-radius:4px;font-size:20px}
+.slot .pos.sm{font-size:14px}
+.hero{background:radial-gradient(120% 90% at 100% 0%,rgba(225,10,30,.22),transparent 55%),linear-gradient(160deg,#1C1C24,#0D0D12);border:1px solid #2A2A34;color:#fff;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:0;bottom:0;right:-30px;width:120px;background:repeating-linear-gradient(115deg,rgba(225,10,30,.55) 0 6px,transparent 6px 18px);transform:skewX(-12deg);opacity:.35;pointer-events:none}
+.hero::after{content:"";position:absolute;left:0;top:0;width:100%;height:3px;background:linear-gradient(90deg,#E10A1E,#FF4D5E 60%,transparent)}
+.hero > *{position:relative}
+.hero .label{color:#FF4D5E}
+.hero .muted{color:#B5B5C3}
+.hero .cd{flex:1;text-align:center;padding:10px 0 8px;border-radius:8px;background:#111117;border:1px solid #2E2E39;border-bottom:3px solid #E10A1E}
+.hero .btn.primary{background:#E10A1E;color:#fff;box-shadow:0 8px 22px -10px #E10A1E}
+.hero .ic.ok{background:rgba(25,214,122,.18);color:#19D67A}.hero .ic.warn{background:#FFD60A;color:#1a1400}
+.lights{display:flex;gap:6px;align-items:center}
+.lights span{width:16px;height:16px;border-radius:8px;background:#26262E;box-shadow:inset 0 0 0 2px #3A3A46}
+.lights span.on{background:#ff2a2a;box-shadow:0 0 10px 2px rgba(255,40,40,.75)}
+.tpos{width:30px;height:28px;display:flex;align-items:center;justify-content:center;transform:skewX(-12deg);border-radius:3px;background:var(--chip);font-family:'Barlow Condensed',sans-serif;font-style:italic;font-weight:800;font-size:18px}
+.tpos.p1{background:var(--accent);color:var(--accent-ink)}
+.stripe{width:4px;height:26px;border-radius:2px;flex:none}
+.purple{display:inline-flex;align-items:center;white-space:nowrap;flex:none;min-height:20px;padding:0 6px;border-radius:4px;background:var(--purple-soft);color:var(--purple);font-size:11px;font-weight:800;font-style:italic;text-transform:uppercase}
+.nav{border-top:0;box-shadow:0 -1px 0 var(--line)}
+.nav a{position:relative;text-transform:uppercase;letter-spacing:.06em;font-size:10px;font-weight:700}
+.nav a[aria-current="page"]{color:var(--text)}
+.nav a[aria-current="page"]::before{content:"";position:absolute;top:0;left:22%;right:22%;height:3px;border-radius:0 0 3px 3px;background:var(--accent)}
+.nav a[aria-current="page"] svg{color:var(--accent)}
+.seg button[aria-selected="true"],.seg button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);box-shadow:none}
+.seg button{font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:12px}
+.switch[aria-checked="true"],.switch[aria-pressed="true"]{background:var(--accent)}
+@media (prefers-reduced-motion: no-preference){.sheet{animation:up .18s ease-out}@keyframes up{from{transform:translateY(24px);opacity:.6}to{transform:none;opacity:1}}}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script>
+(function () {
+'use strict';
+var esc = function (s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+var flag = function (cc) { return cc ? cc.replace(/./g, function (ch) { return String.fromCodePoint(127397 + ch.charCodeAt(0)); }) + ' ' : ''; };
+
+var TEAMS = {
+  'McLaren': ['#FF8000', 'Norris · Piastri'], 'Red Bull': ['#3671C6', 'Verstappen · Hadjar'], 'Ferrari': ['#E8002D', 'Leclerc · Hamilton'],
+  'Mercedes': ['#27F4D2', 'Russell · Antonelli'], 'Aston Martin': ['#229971', 'Alonso · Stroll'], 'Williams': ['#64C4FF', 'Albon · Sainz'],
+  'Alpine': ['#0093CC', 'Gasly · Colapinto'], 'Haas': ['#B6BABD', 'Ocon · Bearman'], 'Racing Bulls': ['#6692FF', 'Lawson · Lindblad'],
+  'Audi': ['#F50537', 'Hülkenberg · Bortoleto'], 'Cadillac': ['#C9A86A', 'Pérez · Bottas']
+};
+var TEAM_LIST = Object.keys(TEAMS);
+var DRIVERS = [
+  ['NOR', 'Lando Norris', 'McLaren', 'GB'], ['PIA', 'Oscar Piastri', 'McLaren', 'AU'], ['VER', 'Max Verstappen', 'Red Bull', 'NL'], ['HAD', 'Isack Hadjar', 'Red Bull', 'FR'],
+  ['LEC', 'Charles Leclerc', 'Ferrari', 'MC'], ['HAM', 'Lewis Hamilton', 'Ferrari', 'GB'], ['RUS', 'George Russell', 'Mercedes', 'GB'], ['ANT', 'Kimi Antonelli', 'Mercedes', 'IT'],
+  ['ALO', 'Fernando Alonso', 'Aston Martin', 'ES'], ['STR', 'Lance Stroll', 'Aston Martin', 'CA'], ['ALB', 'Alex Albon', 'Williams', 'TH'], ['SAI', 'Carlos Sainz', 'Williams', 'ES'],
+  ['GAS', 'Pierre Gasly', 'Alpine', 'FR'], ['COL', 'Franco Colapinto', 'Alpine', 'AR'], ['OCO', 'Esteban Ocon', 'Haas', 'FR'], ['BEA', 'Oliver Bearman', 'Haas', 'GB'],
+  ['LAW', 'Liam Lawson', 'Racing Bulls', 'NZ'], ['LIN', 'Arvid Lindblad', 'Racing Bulls', 'GB'], ['HUL', 'Nico Hülkenberg', 'Audi', 'DE'], ['BOR', 'Gabriel Bortoleto', 'Audi', 'BR'],
+  ['PER', 'Sergio Pérez', 'Cadillac', 'MX'], ['BOT', 'Valtteri Bottas', 'Cadillac', 'FI']
+];
+var DRV = {}; DRIVERS.forEach(function (d) { DRV[d[0]] = { code: d[0], name: d[1], team: d[2], cc: d[3], color: TEAMS[d[2]][0] }; });
+var GRID = { gp: ['NOR', 'VER', 'LEC', 'PIA', 'RUS', 'HAM', 'ANT', 'ALO', 'ALB', 'SAI', 'HAD', 'GAS', 'LAW', 'BEA', 'HUL', 'OCO', 'BOR', 'STR', 'LIN', 'COL', 'PER', 'BOT'],
+  sprint: ['VER', 'NOR', 'PIA', 'LEC', 'HAM', 'RUS', 'ANT', 'ALB', 'ALO', 'HAD', 'SAI', 'GAS', 'BEA', 'LAW', 'OCO', 'HUL', 'STR', 'BOR', 'COL', 'LIN', 'BOT', 'PER'] };
+var DEFS = {
+  gp: [
+    { k: 'p1', pos: 'P1', label: 'Race winner', pts: 10, kind: 'driver', top: true },
+    { k: 'p2', pos: 'P2', label: 'Second place', pts: 8, kind: 'driver', top: true },
+    { k: 'p3', pos: 'P3', label: 'Third place', pts: 6, kind: 'driver', top: true },
+    { k: 'p4', pos: 'P4', label: 'Fourth place', pts: 4, kind: 'driver', top: true },
+    { k: 'p5', pos: 'P5', label: 'Fifth place', pts: 2, kind: 'driver', top: true },
+    { k: 'fl', pos: 'FL', label: 'Fastest lap', pts: 2, kind: 'driver' },
+    { k: 'dotd', pos: 'DOTD', label: 'Driver of the day', pts: 2, kind: 'driver' },
+    { k: 'pit', pos: 'PIT', label: 'First team to pit', pts: 1, kind: 'team', hint: 'Scores if one of the team’s cars makes the first pit stop' },
+    { k: 'out', pos: 'OUT', label: 'First team to lose a car', pts: 1, kind: 'team', hint: 'Scores if one of the team’s cars is the first to retire' },
+    { k: 'both', pos: '2×', label: 'Both cars finish', pts: 1, kind: 'team', hint: 'Scores if both of the team’s cars are classified at the finish' }
+  ],
+  sprint: [
+    { k: 'p1', pos: 'P1', label: 'Sprint winner', pts: 3, kind: 'driver', top: true },
+    { k: 'p2', pos: 'P2', label: 'Sprint second', pts: 2, kind: 'driver', top: true },
+    { k: 'p3', pos: 'P3', label: 'Sprint third', pts: 1, kind: 'driver', top: true }
+  ]
+};
+var NOMS = [
+  { k: 'wdc', label: 'Drivers’ champion', pts: 20, kind: 'driver' },
+  { k: 'wcc', label: 'Constructors’ champion', pts: 10, kind: 'team' },
+  { k: 'pitstop', label: 'Team with the fastest pit stop', pts: 10, kind: 'team' },
+  { k: 'swap', label: 'Team that changes a driver mid-season', pts: 10, kind: 'team' }
+];
+var PLAYERS = [
+  { n: 'Ellie', lc: '#E8590C', c: '#FF5A1F', total: 286, last: 18, move: 1, form: [12, 15, 20, 9, 18] },
+  { n: 'Dad', lc: '#0CA678', c: '#3DD6C3', total: 279, last: 9, move: -1, form: [17, 11, 14, 16, 9] },
+  { n: 'Jack', lc: '#4C6EF5', c: '#C9CED6', total: 262, last: 22, move: 1, form: [8, 13, 10, 19, 22] },
+  { n: 'Mum', lc: '#AE3EC9', c: '#B79CFF', total: 251, last: 10, move: -1, form: [14, 9, 16, 12, 10] },
+  { n: 'Grandad', lc: '#E67700', c: '#F2C14E', total: 233, last: 6, move: 0, form: [10, 7, 12, 11, 6] },
+  { n: 'Auntie Sue', lc: '#1C7ED6', c: '#7FB2FF', total: 219, last: 11, move: 0, form: [9, 12, 8, 10, 11] }
+];
+var RACES = [
+  ['1', '8 Mar', 'Australian GP', 'done', 'RUS', 'Dad'], ['2', '14 Mar', 'Chinese Sprint', 'done', 'VER', 'Mum', 1], ['2', '15 Mar', 'Chinese GP', 'done', 'NOR', 'Ellie'],
+  ['3', '29 Mar', 'Japanese GP', 'done', 'PIA', 'Mum'], ['–', '19 Apr', 'Saudi Arabian GP', 'cancelled'], ['4', '2 May', 'Miami Sprint', 'done', 'NOR', 'Ellie', 1], ['4', '3 May', 'Miami GP', 'done', 'NOR', 'Jack'],
+  ['5', '23 May', 'Canadian Sprint', 'done', 'PIA', 'Jack', 1], ['5', '24 May', 'Canadian GP', 'done', 'VER', 'Dad'], ['6', '7 Jun', 'Monaco GP', 'done', 'LEC', 'Auntie Sue'], ['7', '14 Jun', 'Barcelona GP', 'done', 'NOR', 'Ellie'],
+  ['8', '28 Jun', 'Austrian GP', 'done', 'PIA', 'Grandad'], ['9', '4 Jul', 'British Sprint', 'done', 'NOR', 'Grandad', 1], ['9', '5 Jul', 'British GP', 'done', 'LEC', 'Dad'], ['10', '19 Jul', 'Belgian GP', 'done', 'VER', 'Mum'],
+  ['11', '26 Jul', 'Hungarian GP', 'done', 'NOR', 'Ellie'], ['12', '22 Aug', 'Dutch Sprint', 'done', 'LEC', 'Dad', 1], ['12', '23 Aug', 'Dutch GP', 'done', 'PIA', 'Jack'], ['13', '6 Sep', 'Italian GP', 'done', 'VER', 'Dad'],
+  ['14', '13 Sep', 'Spanish GP (Madrid)', 'done', 'RUS', 'Ellie'], ['15', '26 Sep', 'Azerbaijan GP', 'done', 'NOR', 'Mum'], ['16', '4 Oct', 'Bahrain GP (Sepang)', 'moved', 'PIA', 'Ellie'],
+  ['17', '10 Oct', 'Singapore Sprint', 'done', 'VER', 'Dad', 1], ['17', '11 Oct', 'Singapore GP', 'done', 'VER', 'Dad'], ['18', '25 Oct', 'United States GP', 'done', 'NOR', 'Jack'],
+  ['19', '1 Nov', 'Mexico City GP', 'next'], ['20', '8 Nov', 'São Paulo GP', 'up'], ['21', '21 Nov', 'Las Vegas GP', 'up'], ['22', '29 Nov', 'Qatar GP', 'up'], ['23', '6 Dec', 'Abu Dhabi GP', 'up']
+];
+var DSTAND = [['NOR', 6, 312], ['PIA', 4, 289], ['VER', 4, 276], ['RUS', 2, 241], ['LEC', 2, 220], ['HAM', 0, 168], ['ANT', 0, 150], ['ALB', 0, 72], ['ALO', 0, 58], ['HAD', 0, 54], ['SAI', 0, 49], ['BEA', 0, 38]];
+var TSTAND = [['McLaren', 10, 601], ['Mercedes', 2, 391], ['Ferrari', 2, 388], ['Red Bull', 4, 330], ['Williams', 0, 121], ['Aston Martin', 0, 72], ['Haas', 0, 60], ['Audi', 0, 46], ['Racing Bulls', 0, 40], ['Alpine', 0, 40], ['Cadillac', 0, 4]];
+var LOCK = Date.UTC(2026, 10, 1, 20, 0);
+
+var S = {
+  route: 'home', admin: false, sprint: false, qualiDone: true, session: 'gp',
+  picks: { gp: { p1: 'NOR', p2: 'VER' }, sprint: { p1: 'NOR' } }, submitted: { gp: false, sprint: false }, submittedAt: { gp: null, sprint: null },
+  joker: false, jokersLeft: 2, sheet: null, showGrid: false, seasonTab: 'league',
+  noms: { wdc: 'NOR' }, nomsSealed: false,
+  review: { lock: '20:00', dotd: '', sue: null, grandad: 'keep', out: null, confirmed: false },
+  fu: { kind: 'post', version: 0, edited: null, note: '', noteInput: '', shared: false, skipped: false },
+  signin: { email: '', sent: false }, signedIn: true,
+  spoilerShield: true, postRace: false, newsRevealed: false, newsFilter: 'all',
+  theme: 'dark', tour: true, chartFocus: null, bd: null, bdMode: 'admin', me: 'Jack', q: { open: false, line: '', note: '', sent: false },
+  jokersTotal: 3, carry: 50, rd: null, applyFrom: 'next',
+  toast: ''
+};
+var ROUTES = ['stats', 'news', 'weekend', 'signin', 'home', 'picks', 'season', 'more', 'review', 'followup', 'nominations', 'rules'];
+function readHash() { var h = (location.hash || '').replace('#', ''); if (ROUTES.indexOf(h) >= 0) S.route = h; }
+function go(r) { if (location.hash !== '#' + r) { history.replaceState(null, '', '#' + r); } S.route = r; S.sheet = null; render(); window.scrollTo(0, 0); }
+function toast(t) { S.toast = t; render(); clearTimeout(toast.t); toast.t = setTimeout(function () { S.toast = ''; render(); }, 2200); }
+
+function ukTime(ms) {
+  try { return new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/London', weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }).format(new Date(ms)).replace(',', '') + ' UK'; }
+  catch (e) { return new Date(ms).toUTCString().slice(0, 22); }
+}
+function beforeLock(ms) {
+  var d = Math.max(0, LOCK - ms), dd = Math.floor(d / 864e5), h = Math.floor(d % 864e5 / 36e5), m = Math.floor(d % 36e5 / 6e4);
+  return (dd ? dd + 'd ' : '') + (dd || h ? h + 'h ' : '') + m + 'm before lights out';
+}
+function countdown() {
+  var ms = Math.max(0, LOCK - Date.now()); var d = Math.floor(ms / 864e5), h = Math.floor(ms % 864e5 / 36e5), m = Math.floor(ms % 36e5 / 6e4);
+  return { d: d, h: String(h).padStart(2, '0'), m: String(m).padStart(2, '0'), text: d + 'd ' + h + 'h ' + m + 'm' };
+}
+var MARK = '<svg class="mark" viewBox="0 0 28 28" aria-hidden="true"><rect x="1" y="1" width="26" height="26" rx="7" fill="var(--accent)"/><path d="M7 7h5v5H7zM17 7h4v5h-4zM12 12h5v5h-5zM7 17h5v4H7zM17 17h4v4h-4z" fill="var(--accent-ink)"/></svg>';
+var BACK = function (to) { return '<button class="back" data-go="' + to + '" aria-label="Back"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>'; };
+function top(title, back) {
+  return '<header class="top">' + (back ? BACK(back) + '<span class="brand">' + esc(title) + '</span>' : MARK + '<span class="brand">ABRC Formula 1 League<small>2026 season · preview with sample data</small></span>') + '<span class="spacer"></span>' + (S.admin ? '<span class="tag acc">ABRC</span>' : '') + '</header>';
+}
+function teamPill(team) { return '<span class="teampill"><span class="dot" style="background:' + TEAMS[team][0] + '"></span>' + esc(team) + '</span>'; }
+
+function signin() {
+  var G = S.signin, ok = /.+@.+\..+/.test(G.email);
+  return '<main class="screen" style="min-height:100vh;justify-content:center;gap:24px;padding-bottom:40px">' +
+    '<div class="col" style="align-items:flex-start;gap:14px">' + MARK.replace('class="mark"', 'class="mark" style="width:48px;height:48px"') +
+    '<h1 class="display" style="font-size:44px">ABRC Formula 1 League</h1><p class="muted" style="margin:0;line-height:1.5">Sign in with the email address ABRC invited. No password needed.</p></div>' +
+    (G.sent
+      ? '<section class="card" style="display:flex;flex-direction:column;gap:12px" role="status"><span style="font-size:28px" aria-hidden="true">✉️</span><h2 class="display" style="font-size:26px">Check your email</h2><p class="muted" style="margin:0;line-height:1.5">We’ve sent a sign-in link to <strong style="color:var(--text)">' + esc(G.email) + '</strong>. Tap it on this phone and you’re in. The link works once and expires in an hour.</p>' +
+        '<button class="btn primary block" data-signin="open">Open the link (preview)</button><button class="btn ghost block" data-signin="resend">Send it again</button><button class="btn block" style="background:transparent;color:var(--muted);min-height:40px;font-weight:600" data-signin="change">Use a different email</button>' +
+        '<p class="small muted" style="margin:0;line-height:1.45">Not there? Check spam, or ask ABRC to check your email address.</p></section>'
+      : '<section class="card" style="display:flex;flex-direction:column;gap:12px"><label class="label" for="em">Email address</label><input id="em" type="text" inputmode="email" autocomplete="email" value="' + esc(G.email) + '" data-signin-email placeholder="you@example.com">' +
+        '<button class="btn primary block" data-signin="send" ' + (ok ? '' : 'disabled') + '>Email me a sign-in link</button></section>' +
+        '<p class="small muted" style="margin:0;line-height:1.5">Not been invited yet? Ask ABRC to add you. If ABRC gave you a personal link, just open that instead.</p>') +
+    '</main>';
+}
+
+function seasonSeries(p) {
+  var before = p.total - p.last, early = before - p.form.slice(0, 4).reduce(function (a, b) { return a + b; }, 0);
+  var pts = [], seed = p.n.length * 7;
+  for (var r = 1; r <= 13; r++) { seed = (seed * 9301 + 49297) % 233280; pts.push(early / 13 + (seed / 233280 - 0.5) * 8); }
+  var adj = early - pts.reduce(function (a, b) { return a + b; }, 0); pts = pts.map(function (v) { return v + adj / 13; });
+  pts = pts.concat(p.form);
+  var cum = [], t = 0; pts.forEach(function (v) { t += v; cum.push(Math.round(t)); }); cum[cum.length - 1] = p.total;
+  return cum;
+}
+function chart() {
+  var W = 340, H = 210, L = 34, R = 10, T = 10, Bm = 26, max = 300, n = 18;
+  var x = function (i) { return L + i / (n - 1) * (W - L - R); }, y = function (v) { return T + (1 - v / max) * (H - T - Bm); };
+  var grid = [0, 100, 200, 300].map(function (v) { return '<line x1="' + L + '" x2="' + (W - R) + '" y1="' + y(v) + '" y2="' + y(v) + '" stroke="var(--line)"/><text x="' + (L - 6) + '" y="' + (y(v) + 4) + '" text-anchor="end" font-size="10" fill="var(--muted)">' + v + '</text>'; }).join('');
+  var xl = [1, 6, 12, 18].map(function (r) { return '<text x="' + x(r - 1) + '" y="' + (H - 8) + '" text-anchor="middle" font-size="10" fill="var(--muted)">R' + r + '</text>'; }).join('');
+  var f = S.chartFocus;
+  var order = PLAYERS.slice().sort(function (a, b) { return (a.n === f) - (b.n === f); });
+  var lines = order.map(function (p) {
+    var c = seasonSeries(p), on = !f || f === p.n;
+    var d = c.map(function (v, i) { return (i ? 'L' : 'M') + x(i).toFixed(1) + ' ' + y(v).toFixed(1); }).join(' ');
+    return '<path d="' + d + '" fill="none" stroke="' + p.lc + '" stroke-width="' + (f === p.n ? 3.5 : 2.2) + '" stroke-linejoin="round" stroke-linecap="round" opacity="' + (on ? 1 : 0.18) + '"/>' +
+      (on ? '<circle cx="' + x(n - 1) + '" cy="' + y(p.total) + '" r="3.5" fill="' + p.lc + '"/>' : '');
+  }).join('');
+  var label = 'Cumulative points across rounds 1 to 18. ' + PLAYERS.map(function (p) { return p.n + ' ' + p.total; }).join(', ');
+  var legend = PLAYERS.map(function (p) { var on = f === p.n; return '<button class="teampill" style="min-height:32px;border:1px solid ' + (on ? p.lc : 'transparent') + ';' + (f && !on ? 'opacity:.55;' : '') + '" aria-pressed="' + on + '" data-focus="' + esc(p.n) + '"><span class="dot" style="background:' + p.lc + '"></span>' + esc(p.n) + '</button>'; }).join('');
+  var gap = f ? (function () { var me = PLAYERS.filter(function (p) { return p.n === f; })[0], i = PLAYERS.indexOf(me); return i === 0 ? f + ' leads by ' + (me.total - PLAYERS[1].total) + ' points' : f + ' is ' + (PLAYERS[0].total - me.total) + ' points behind the leader, ' + (PLAYERS[i - 1].total - me.total) + ' behind ' + PLAYERS[i - 1].n; })() : 'Tap a name to follow one player';
+  return '<section class="card" aria-labelledby="ch" style="display:flex;flex-direction:column;gap:10px"><div class="row" style="justify-content:space-between"><h2 id="ch" class="display" style="font-size:26px">Season to date</h2><span class="small muted">Cumulative points</span></div>' +
+    '<svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="' + esc(label) + '" style="width:100%;height:auto;display:block">' + grid + xl + lines + '</svg>' +
+    '<div class="row" style="flex-wrap:wrap;gap:6px">' + legend + '</div><span class="small muted">' + esc(gap) + '</span></section>';
+}
+
+function tourSheet() {
+  var steps = [
+    ['Make your picks', 'Picks tab: choose drivers and teams, play a joker, then submit. Try changing a pick after submitting.'],
+    ['Check the league', 'Home: your last race and submission time. Season: the league table and season chart. Tap any name for their points breakdown.'],
+    ['Query a score', 'Home › See my breakdown › Query this score.'],
+    ['Switch to ABRC', 'More › View as ABRC. Then try the race review, the WhatsApp follow-up and editing the scoring rules.'],
+    ['Read the news', 'News tab: the latest headlines summarised, with pick-relevant stories flagged and a spoiler shield for race day.'],
+    ['Try the extras', 'More › Sprint weekend, Qualifying finished and Jokers left change what the Picks screen shows.']
+  ];
+  return '<div class="sheet-wrap" data-tour-close="1"><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="tour-t"><div class="sheet-head"><div class="col" style="gap:4px"><span class="label">Preview for ABRC</span><h2 id="tour-t" class="display" style="font-size:30px">Welcome to the ABRC Formula 1 League</h2></div></div>' +
+    '<div class="sheet-list" style="padding:0 20px 20px;display:flex;flex-direction:column;gap:12px">' +
+    '<p class="muted" style="margin:0;line-height:1.5">This is a working preview of the new league app. The players, picks and points are sample data, and nothing you do is saved or sent, so tap anything.</p>' +
+    steps.map(function (st, i) { return '<div class="row" style="align-items:flex-start"><span class="ic ok" style="flex:none">' + (i + 1) + '</span><span class="col" style="gap:2px"><span style="font-weight:600">' + st[0] + '</span><span class="small muted" style="line-height:1.45">' + st[1] + '</span></span></div>'; }).join('') +
+    '<p class="small muted" style="margin:0;line-height:1.45">On a phone, add it to your home screen to see it as an app: Safari › Share › Add to Home Screen, or Chrome › Install app. You can reopen this guide from More.</p>' +
+    '<button class="btn primary block" data-tour-close="1">Start exploring</button></div></div></div>';
+}
+
+/* ---------- Race weekend guide (ABRC) ---------- */
+var WEEKEND = {
+  gp: [
+    ['Before race week', [
+      ['After the last race is confirmed', 'auto', 'Picks open for the next race', 'Players can make and change picks from now until lights out.'],
+      ['Early in the week', 'auto', 'About this race is written', 'The circuit and last year’s race, written automatically. Edit it if anything looks wrong.'],
+      ['3 days after the last race', 'auto', 'Spreadsheet backup sent', 'To the backup address in Notifications.'],
+      ['About a week before', 'auto', 'Weather forecast appears', 'Forecast for the local start time, refreshed every few hours.']
+    ]],
+    ['Friday', [
+      ['09:00', 'abrc', 'Pre-race update ready', 'Drafted in Carl’s voice. Edit it, then share it to WhatsApp or skip it.'],
+      ['Through the day', 'auto', 'Entry list checked', 'Any stand-in driver is added and the replaced driver marked “Not racing”. Update the list by hand if a late change is slow to appear.'],
+      ['After each practice', 'auto', 'Form guide updated', 'FP1 and FP2 results appear on the Picks screen.'],
+      ['48 hours before lights out', 'auto', 'Reminder 1', 'Emailed to players without picks.']
+    ]],
+    ['Saturday', [
+      ['After FP3', 'auto', 'Form guide updated', 'FP3 results added.'],
+      ['After qualifying', 'auto', 'Grid published', 'Shown as the qualifying result until the official grid is out.'],
+      ['Evening', 'auto', 'Grid penalties checked', 'Stewards’ decisions are flagged and the official grid replaces the qualifying order.'],
+      ['24 hours before lights out', 'auto', 'Reminder 2', 'Emailed to players without picks.']
+    ]],
+    ['Sunday', [
+      ['Morning', 'auto', 'Grid checked again', 'Catches pit-lane starts and late changes.'],
+      ['2 hours before lights out', 'auto', 'Reminder 3', 'Emailed to players without picks.'],
+      ['1 hour before lights out', 'abrc', 'Missing picks alert', 'Emailed to Emma and Carl with the names of anyone still missing. Chase them up if you want to.'],
+      ['Lights out', 'auto', 'Picks lock', 'Late entries are held. If the start is delayed, there’s nothing to do now: move the lock time in the race review afterwards.'],
+      ['About an hour after the race', 'auto', 'Results pulled and scores held', 'Nothing is final or visible to players until you confirm.'],
+      ['When you’re ready', 'abrc', 'Race review', 'Check the lock time, enter driver of the day, decide any late entries, carry-overs or same-lap retirements, then confirm the scores.'],
+      ['Straight after confirming', 'auto', 'Scores go live', 'League table, picks and points breakdowns become visible to everyone.'],
+      ['Straight after confirming', 'abrc', 'Race follow-up', 'Drafted in Carl’s voice. Add a personal note if you like, edit, then share to WhatsApp or skip.']
+    ]],
+    ['After the weekend', [
+      ['Next day', 'auto', 'Results re-checked', 'Any change after the race, such as a penalty, is flagged.'],
+      ['If flagged', 'abrc', 'Rescore', 'Correct the result in the race review and confirm again.'],
+      ['Up to 48 hours after confirming', 'abrc', 'Player queries', 'Queries appear in the race review. Keep or correct, then resolve.'],
+      ['3 days after the race', 'auto', 'Spreadsheet backup sent', 'Covers the race just finished.']
+    ]]
+  ],
+  sprint: [
+    ['Before race week', [
+      ['After the last race is confirmed', 'auto', 'Sprint and Grand Prix picks open', 'Two sets of picks, each with its own deadline.'],
+      ['Early in the week', 'auto', 'About this race is written', 'Edit it if anything looks wrong.']
+    ]],
+    ['Friday', [
+      ['09:00', 'abrc', 'Pre-race update ready', 'Covers the whole weekend. Edit, then share or skip.'],
+      ['After the only practice', 'auto', 'Form guide updated', 'Sprint weekends have one practice session.'],
+      ['After sprint qualifying', 'auto', 'Sprint grid published', 'Shown on the Sprint tab.'],
+      ['Before sprint lights out', 'auto', 'Sprint reminders', 'Same schedule as race reminders, based on the sprint start.']
+    ]],
+    ['Saturday', [
+      ['Sprint lights out', 'auto', 'Sprint picks lock', 'Jokers must be played by now. One joker covers both races.'],
+      ['After the sprint', 'abrc', 'Sprint review', 'Same steps as a race review, for the top three only. Confirm the scores.'],
+      ['After confirming', 'abrc', 'Sprint follow-up', 'Drafted separately from the Grand Prix one. Share or skip.'],
+      ['After qualifying', 'auto', 'Grand Prix grid published', 'Then the usual penalty checks overnight.']
+    ]],
+    ['Sunday', [
+      ['Before lights out', 'auto', 'Grand Prix reminders and missing picks alert', 'As on a normal weekend.'],
+      ['Lights out', 'auto', 'Grand Prix picks lock', 'Late entries held.'],
+      ['After the race', 'abrc', 'Race review and follow-up', 'As on a normal weekend.']
+    ]],
+    ['After the weekend', [
+      ['Next day', 'auto', 'Results re-checked', 'For both the sprint and the Grand Prix.'],
+      ['3 days after the Grand Prix', 'auto', 'One spreadsheet backup', 'Covers both races.']
+    ]]
+  ]
+};
+function weekend() {
+  var kind = S.wk || 'gp', mine = !!S.wkMine;
+  var badge = function (w) { return w === 'abrc' ? '<span class="tag acc">ABRC</span>' : '<span class="tag ok">Automatic</span>'; };
+  var days = WEEKEND[kind].map(function (d) {
+    var items = d[1].filter(function (x) { return !mine || x[1] === 'abrc'; });
+    if (!items.length) return '';
+    return '<section class="card" style="display:flex;flex-direction:column;gap:0;padding-top:12px;padding-bottom:6px"><h2 class="display" style="font-size:22px;margin-bottom:6px">' + d[0] + '</h2>' +
+      items.map(function (x) { var you = x[1] === 'abrc'; return '<div class="row" style="align-items:flex-start;gap:12px;padding:10px 0;border-top:1px solid var(--line)"><span style="flex:none;width:10px;height:10px;margin-top:5px;border-radius:5px;background:' + (you ? 'var(--accent)' : 'var(--pos)') + '"></span><span class="col" style="gap:3px;flex:1"><span class="row" style="justify-content:space-between;gap:8px;flex-wrap:wrap"><span class="small muted" style="font-weight:600">' + x[0] + '</span>' + badge(x[1]) + '</span><span style="font-weight:' + (you ? 700 : 600) + '">' + x[2] + '</span><span class="small muted" style="line-height:1.45">' + x[3] + '</span></span></div>'; }).join('') + '</section>';
+  }).join('');
+  return top('Race weekend guide', 'more') + '<main class="screen">' +
+    '<p class="muted" style="margin:0;line-height:1.5">What happens across a race weekend, in order. Green steps happen automatically. Red steps need ABRC.</p>' +
+    '<div class="seg" role="tablist" aria-label="Weekend type">' + [['gp', 'Normal weekend'], ['sprint', 'Sprint weekend']].map(function (x) { return '<button role="tab" aria-selected="' + (kind === x[0]) + '" data-wk="' + x[0] + '">' + x[1] + '</button>'; }).join('') + '</div>' +
+    '<div class="row"><span class="col" style="flex:1"><span style="font-weight:600">Only show ABRC tasks</span><span class="small muted">Hide the automatic steps</span></span><button class="switch" role="switch" aria-checked="' + mine + '" aria-label="Only show ABRC tasks" data-wkmine="1"><span></span></button></div>' +
+    days + '<p class="small muted" style="margin:0">Times are UK time. Reminder times follow the settings in Notifications.</p></main>';
+}
+
+function pickSplit() {
+  var res = revResult(CONFIRMED), names = Object.keys(REV_PICKS).filter(function (n) { return REV_PICKS[n].at; });
+  var nm = function (v) { return DRV[v] ? DRV[v].name.split(' ').slice(1).join(' ') : v; };
+  return DEFS.gp.map(function (d) {
+    var counts = {};
+    names.forEach(function (n) { var v = REV_PICKS[n].p[d.k]; (counts[v] = counts[v] || []).push(n); });
+    var hit = function (v) { return d.k === 'both' ? res.both.indexOf(v) >= 0 : res[d.k] === v; };
+    var opts = Object.keys(counts).map(function (v) { return { v: v, label: nm(v), full: DRV[v] ? flag(DRV[v].cc) + DRV[v].name : v, who: counts[v], n: counts[v].length, hit: hit(v), color: DRV[v] ? DRV[v].color : (TEAMS[v] ? TEAMS[v][0] : 'var(--muted)') }; }).sort(function (a, b) { return b.n - a.n || (b.hit - a.hit); });
+    return { def: d, total: names.length, opts: opts, lone: opts.filter(function (o) { return o.n === 1 && o.hit; }), resLabel: d.k === 'both' ? res.both.join(', ') : nm(res[d.k]) };
+  });
+}
+function popularityCard() {
+  var sp = pickSplit(), tot = sp[0].total;
+  var lead = function (c) { var o = c.opts[0]; return o.n + ' of ' + tot + ' backed ' + esc(o.label) + (o.hit ? ' <span class="up">✓</span>' : ' <span class="small muted">· it was ' + esc(c.resLabel) + '</span>'); };
+  var lones = []; sp.forEach(function (c) { c.lone.forEach(function (o) { lones.push('<div class="row" style="gap:8px"><span class="purple">Lone wolf</span><span class="small"><strong>' + esc(o.who[0]) + '</strong> · ' + esc(c.def.label) + ': ' + esc(o.label) + '</span></div>'); }); });
+  return '<section class="card" aria-labelledby="pp" style="display:flex;flex-direction:column;gap:10px"><div class="row" style="justify-content:space-between"><h2 id="pp" class="display" style="font-size:24px">How the league picked</h2><span class="small muted">Round 18</span></div>' +
+    [0, 1, 2].map(function (i) { return '<div class="col" style="gap:2px"><span class="label" style="font-size:11px">' + esc(sp[i].def.label) + '</span><span class="small">' + lead(sp[i]) + '</span></div>'; }).join('') +
+    (lones.length ? '<div class="col" style="gap:6px;padding-top:8px;border-top:1px solid var(--line)">' + lones.join('') + '</div>' : '') +
+    '<button class="btn ghost block" data-split="1">See the full split</button></section>';
+}
+function splitSheet() {
+  var sp = pickSplit();
+  return '<div class="sheet-wrap" data-close="1"><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sp-t"><div class="sheet-head"><div class="col" style="gap:2px"><span class="label">Round 18 · United States GP</span><h2 id="sp-t" class="display" style="font-size:26px">How the league picked</h2></div><button class="back" data-close="1" aria-label="Close" style="margin:0"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>' +
+    '<div class="sheet-list" style="padding:0 20px 20px;display:flex;flex-direction:column;gap:16px">' +
+    sp.map(function (c) { return '<div class="col" style="gap:6px"><div class="row" style="justify-content:space-between"><span style="font-weight:700">' + esc(c.def.label) + '</span><span class="small muted">Result: ' + esc(c.resLabel) + '</span></div>' +
+      c.opts.map(function (o) { return '<div class="col" style="gap:3px"><div class="row" style="justify-content:space-between;gap:8px"><span class="small" style="font-weight:600">' + o.full + (o.hit ? ' <span class="up">✓</span>' : '') + (o.n === 1 && o.hit ? ' <span class="purple">Lone wolf</span>' : '') + '</span><span class="small muted">' + esc(o.who.join(', ')) + '</span></div><span style="height:8px;border-radius:4px;background:var(--sunk)"><span style="display:block;height:8px;border-radius:4px;width:' + (o.n / c.total * 100).toFixed(0) + '%;background:' + o.color + ';opacity:' + (o.hit ? 1 : .45) + '"></span></span></div>'; }).join('') + '</div>'; }).join('') +
+    '<p class="small muted" style="margin:0">Shown once ABRC confirms the scores. Carried-over picks aren’t counted.</p></div></div></div>';
+}
+
+/* ---------- Share card ---------- */
+function drawShareCard(cb) {
+  var W = 1080, H = 1350, c = document.createElement('canvas'); c.width = W; c.height = H; var g = c.getContext('2d');
+  var go = function () {
+    g.fillStyle = '#0B0B0F'; g.fillRect(0, 0, W, H);
+    for (var y = -H; y < H * 2; y += 12) { g.strokeStyle = 'rgba(255,255,255,0.025)'; g.beginPath(); g.moveTo(0, y); g.lineTo(W, y + W); g.stroke(); }
+    var gr = g.createRadialGradient(W, 0, 50, W, 0, 700); gr.addColorStop(0, 'rgba(225,10,30,0.35)'); gr.addColorStop(1, 'rgba(225,10,30,0)'); g.fillStyle = gr; g.fillRect(0, 0, W, H);
+    g.fillStyle = '#E10A1E'; g.fillRect(0, 0, W, 14);
+    for (var x = 0; x < W; x += 24) { g.fillStyle = (x / 24) % 2 ? '#FFFFFF' : '#0B0B0F'; g.fillRect(x, 14, 12, 12); g.fillStyle = (x / 24) % 2 ? '#0B0B0F' : '#FFFFFF'; g.fillRect(x + 12, 14, 12, 12); }
+    var D = function (sz, w) { return 'italic ' + (w || 800) + ' ' + sz + "px 'Barlow Condensed', 'Arial Narrow', sans-serif"; };
+    var I = function (sz, w) { return (w || 600) + ' ' + sz + "px Inter, Arial, sans-serif"; };
+    g.textBaseline = 'alphabetic';
+    g.fillStyle = '#FF4D5E'; g.font = I(30, 700); g.fillText('ROUND 18 · AUSTIN', 72, 110);
+    g.fillStyle = '#FFFFFF'; g.font = D(96); g.fillText('UNITED STATES GP', 72, 200);
+    g.fillStyle = '#9C9CAB'; g.font = I(30, 500); g.fillText('ABRC Formula 1 League · after round 18', 72, 248);
+    // round winner panel
+    g.fillStyle = '#1A1225'; g.fillRect(72, 290, W - 144, 150); g.fillStyle = '#C27BFF'; g.fillRect(72, 290, 10, 150);
+    g.fillStyle = '#C27BFF'; g.font = I(26, 800); g.fillText('ROUND WINNER', 112, 340);
+    g.fillStyle = '#FFFFFF'; g.font = D(76); g.fillText('JACK', 112, 414);
+    g.fillStyle = '#C27BFF'; g.font = D(96); g.textAlign = 'right'; g.fillText('22', W - 172, 416); g.font = D(40); g.fillText('PTS', W - 104, 414); g.textAlign = 'left';
+    // table
+    g.fillStyle = '#9C9CAB'; g.font = I(24, 700); g.fillText('LEAGUE TABLE', 72, 512);
+    PLAYERS.forEach(function (p, i) {
+      var y = 540 + i * 104;
+      g.fillStyle = '#15151C'; g.fillRect(72, y, W - 144, 88);
+      g.save(); g.translate(112, y + 18); g.transform(1, 0, -0.21, 1, 0, 0); g.fillStyle = i === 0 ? '#E10A1E' : '#22222B'; g.fillRect(0, 0, 64, 52); g.restore();
+      g.fillStyle = '#FFFFFF'; g.font = D(44); g.textAlign = 'center'; g.fillText(String(i + 1), 140, y + 60); g.textAlign = 'left';
+      g.fillStyle = p.lc; g.fillRect(206, y + 20, 8, 48);
+      g.fillStyle = '#FFFFFF'; g.font = I(40, 700); g.fillText(p.n, 236, y + 58);
+      var mv = p.move > 0 ? '▲' + p.move : p.move < 0 ? '▼' + (-p.move) : '–';
+      g.fillStyle = p.move > 0 ? '#19D67A' : p.move < 0 ? '#FF7A45' : '#9C9CAB'; g.font = I(30, 800); g.fillText(mv, 640, y + 56);
+      g.fillStyle = p.n === 'Jack' ? '#C27BFF' : '#19D67A'; g.font = I(30, 800); g.fillText('+' + p.last, 740, y + 56);
+      g.fillStyle = '#FFFFFF'; g.font = D(58); g.textAlign = 'right'; g.fillText(String(p.total), W - 104, y + 64); g.textAlign = 'left';
+    });
+    var sp = pickSplit(), wolf = null; sp.forEach(function (c) { if (!wolf && c.lone.length) wolf = { who: c.lone[0].who[0], what: c.def.label + ': ' + c.lone[0].label }; });
+    if (wolf) { g.fillStyle = '#C27BFF'; g.font = I(28, 800); g.fillText('LONE WOLF', 72, 1210); g.fillStyle = '#FFFFFF'; g.font = I(30, 600); g.fillText(wolf.who + ' · ' + wolf.what, 260, 1210); }
+    g.fillStyle = '#9C9CAB'; g.font = I(26, 500); g.fillText('Next: Mexico City GP · picks lock at lights out, Sun 1 Nov', 72, 1270);
+    for (var k = 0; k < W; k += 60) { g.fillStyle = (k / 60) % 2 ? '#FFFFFF' : '#E10A1E'; g.fillRect(k, H - 20, 60, 20); }
+    cb(c);
+  };
+  try { (document.fonts && document.fonts.load ? Promise.all([document.fonts.load("italic 800 40px 'Barlow Condensed'"), document.fonts.load('700 40px Inter')]) : Promise.resolve()).then(go, go); } catch (e) { go(); }
+}
+function shareCardSection() {
+  return '<section class="card" aria-labelledby="sc-t" style="display:flex;flex-direction:column;gap:10px"><div class="row" style="justify-content:space-between"><h2 id="sc-t" class="label">Share card</h2><span class="small muted">Image for WhatsApp</span></div>' +
+    '<div id="sharecard" style="border-radius:10px;overflow:hidden;background:var(--sunk);aspect-ratio:1080/1350;display:flex;align-items:center;justify-content:center"><span class="small muted">Creating image…</span></div>' +
+    '<div class="row" style="gap:8px"><button class="btn primary" style="flex:1" data-card="share">Share image</button><button class="btn ghost" style="flex:1" data-card="save">Save image</button></div>' +
+    '<p class="small muted" style="margin:0;line-height:1.45">Post it in the WhatsApp group alongside the round-up. It’s created automatically once scores are confirmed.</p></section>';
+}
+function paintShareCard() {
+  var box = document.getElementById('sharecard'); if (!box) return;
+  drawShareCard(function (c) { var url = c.toDataURL('image/png'); S.cardUrl = url; S.cardCanvas = c; box.innerHTML = '<img src="' + url + '" alt="Share card: Round 18 United States GP. Round winner Jack, 22 points. League table led by Ellie on 286." style="width:100%;height:auto;display:block">'; });
+}
+
+/* ---------- News ---------- */
+var NEWS = [
+  { src: 'BBC Sport', url: 'https://www.bbc.co.uk/sport/formula1', ago: '25 min ago', rel: 'Weather', title: 'Dry weekend forecast for Mexico City',
+    sum: ['Forecasters expect warm, dry conditions all weekend, with only a small chance of a shower on Saturday.', 'A dry race usually means a one-stop strategy is possible, which tends to favour cars that look after their tyres.'] },
+  { src: 'Sky Sports F1', url: 'https://www.skysports.com/f1', ago: '1 hr ago', rel: 'Grid penalty', title: 'Red Bull weigh up a fresh power unit',
+    sum: ['Red Bull are considering fitting new engine parts in Mexico, which would bring a grid penalty for one of their drivers.', 'A decision is expected before qualifying. If it goes ahead, the penalty will show on the starting grid in the app.'] },
+  { src: 'BBC Sport', url: 'https://www.bbc.co.uk/sport/formula1', ago: '2 hr ago', rel: 'Driver change', title: 'Reserve drivers lined up for Friday practice',
+    sum: ['Several teams will give their young drivers a run in first practice, as the rules require during the season.', 'These are practice outings only. The regular drivers race on Sunday, so picks are not affected.'] },
+  { src: 'Sky Sports F1', url: 'https://www.skysports.com/f1', ago: '4 hr ago', title: 'Norris extends title lead after Austin win',
+    sum: ['Lando Norris’s win in the United States Grand Prix stretched his championship lead with five races left.', 'His rivals need a strong weekend in Mexico to keep the title fight open.'] },
+  { src: 'BBC Sport', url: 'https://www.bbc.co.uk/sport/formula1', ago: '6 hr ago', title: 'Altitude puts cooling under the spotlight',
+    sum: ['Teams are opening up bodywork to help engines and brakes cope with the thin air in Mexico City.', 'Reliability has decided this race before, so expect plenty of talk about temperatures in practice.'] },
+  { src: 'Sky Sports F1', url: 'https://www.skysports.com/f1', ago: '9 hr ago', title: 'Softest tyre range chosen for Mexico',
+    sum: ['The tyre supplier is bringing its softer compounds, expecting a slippery, low-grip track early in the weekend.', 'Grip should improve as more rubber goes down, which could change the picture between Friday and Sunday.'] },
+  { src: 'BBC Sport', url: 'https://www.bbc.co.uk/sport/formula1', ago: '12 hr ago', title: 'Ferrari upbeat after strong pace in Austin',
+    sum: ['Ferrari believe their car will suit Mexico City after encouraging long-run pace last weekend.', 'They are targeting a podium, with qualifying seen as key on a track where the first corner matters so much.'] },
+  { src: 'Sky Sports F1', url: 'https://www.skysports.com/f1', ago: '1 day ago', title: 'Stewards close review of Austin lap one',
+    sum: ['The stewards have finished reviewing the first-lap incident in Austin and decided no further action is needed.', 'The race result stands as confirmed.'] },
+  { src: 'BBC Sport', url: 'https://www.bbc.co.uk/sport/formula1', ago: '1 day ago', title: '2027 calendar announcement expected soon',
+    sum: ['Formula 1 is expected to publish next season’s calendar in the coming weeks.', 'Once it is out, ABRC will set the 2027 season nominations deadline.'] },
+  { src: 'Sky Sports F1', url: 'https://www.skysports.com/f1', ago: '2 days ago', title: 'Young driver test dates confirmed',
+    sum: ['The end-of-season young driver test will follow the final race in Abu Dhabi.', 'It gives teams a chance to try future drivers and next year’s tyres.'] }
+];
+function news() {
+  var shield = S.spoilerShield && S.postRace && !S.newsRevealed;
+  var list = NEWS.filter(function (n) { return S.newsFilter !== 'rel' || n.rel; });
+  return top() + '<main class="screen">' +
+    '<div class="col" style="gap:6px"><span class="label">Updated 25 min ago</span><h1 class="display" style="font-size:36px">Latest news</h1></div>' +
+    '<div class="banner" style="background:var(--warn-soft);color:var(--warn)">Preview: these are sample headlines, not real news.</div>' +
+    (shield
+      ? '<section class="card" style="display:flex;flex-direction:column;gap:12px;align-items:flex-start"><span style="font-size:28px" aria-hidden="true">🙈</span><h2 class="display" style="font-size:26px">Spoiler shield is on</h2><p class="muted" style="margin:0;line-height:1.5">The Mexico City GP has started, so news is hidden in case you’re watching later. It comes back on automatically tomorrow morning.</p><button class="btn primary" data-news="reveal">Show the news</button><span class="small muted">Turn the shield off in More.</span></section>'
+      : '<div class="seg" role="tablist" aria-label="Filter news">' + [['all', 'All news'], ['rel', 'Relevant to picks']].map(function (x) { return '<button role="tab" aria-selected="' + (S.newsFilter === x[0]) + '" data-newsf="' + x[0] + '">' + x[1] + '</button>'; }).join('') + '</div>' +
+        list.map(function (n) {
+          return '<article class="card" style="display:flex;flex-direction:column;gap:8px">' +
+            '<div class="row" style="justify-content:space-between;gap:8px;flex-wrap:wrap"><span class="small muted" style="font-weight:600">' + esc(n.src) + ' · ' + esc(n.ago) + '</span>' + (n.rel ? '<span class="tag acc">Relevant to picks · ' + esc(n.rel) + '</span>' : '') + '</div>' +
+            '<h2 style="font-size:18px;line-height:1.3;margin:0">' + esc(n.title) + '</h2>' +
+            n.sum.map(function (p) { return '<p style="margin:0;line-height:1.5;font-size:14px">' + esc(p) + '</p>'; }).join('') +
+            '<div class="row" style="justify-content:space-between;gap:8px"><span class="tag">AI summary</span><a class="small" href="' + n.url + '" target="_blank" rel="noopener" style="font-weight:700;min-height:44px;display:inline-flex;align-items:center">Read at ' + esc(n.src) + ' ›</a></div></article>';
+        }).join('') +
+        '<p class="small muted" style="margin:0;line-height:1.45">Summaries are written by AI from each source’s headline and description. Check the full article for details.</p>') +
+    '</main>';
+}
+
+/* ---------- Your stats ---------- */
+function stats() {
+  var me = PLAYERS.filter(function (p) { return p.n === S.me; })[0], pos = PLAYERS.indexOf(me) + 1;
+  var series = seasonSeries(me), per = series.map(function (v, i) { return i ? v - series[i - 1] : v; });
+  var best = Math.max.apply(null, per), bestIdx = per.indexOf(best);
+  var wins = RACES.filter(function (r) { return r[5] === S.me; });
+  var jIdx = per.findIndex(function (v, i) { return i !== bestIdx && v % 2 === 0 && v >= 14; }); if (jIdx < 0) jIdx = 0;
+  var jRace = RACES.filter(function (r) { return r[0] === String(jIdx + 1) && !r[6]; })[0];
+  var jokerText = (jRace ? jRace[2] : 'Round ' + (jIdx + 1)) + ': ' + per[jIdx] + ' points (' + per[jIdx] / 2 + ' doubled)';
+  var ACC = [['Race winner', 44, 36], ['Second place', 22, 19], ['Third place', 17, 15], ['Fourth place', 11, 10], ['Fifth place', 11, 9], ['Fastest lap', 28, 24], ['Driver of the day', 33, 30], ['First team to pit', 39, 27], ['First team to lose a car', 6, 11], ['Both cars finish', 78, 74], ['Sprint top three', 25, 21]];
+  var sorted = ACC.slice().sort(function (a, b) { return b[1] - a[1]; });
+  var tile = function (v, l) { return '<div class="col" style="flex:1;min-width:0;padding:12px;border-radius:10px;background:var(--sunk);gap:2px"><span class="big" style="font-size:30px;line-height:1">' + v + '</span><span class="small muted" style="font-size:12px">' + l + '</span></div>'; };
+  var maxPer = Math.max.apply(null, per);
+  var bars = per.map(function (v, i) { var w = i === bestIdx; return '<span title="Round ' + (i + 1) + ': ' + v + ' pts" style="flex:1;align-self:flex-end;height:' + Math.max(6, v / maxPer * 100) + '%;border-radius:3px 3px 0 0;background:' + (w ? 'var(--purple)' : 'var(--accent)') + ';opacity:' + (w ? 1 : .75) + '"></span>'; }).join('');
+  return top('Your stats', 'home') + '<main class="screen">' +
+    '<div class="row" style="gap:14px"><span class="avatar" style="width:52px;height:52px;border-radius:26px;font-size:22px;background:' + me.c + '">' + esc(me.n[0]) + '</span><span class="col" style="gap:2px"><h1 class="display" style="font-size:34px">' + esc(me.n) + '</h1><span class="small muted">' + pos + (pos === 1 ? 'st' : pos === 2 ? 'nd' : pos === 3 ? 'rd' : 'th') + ' in the league · ' + me.total + ' points after round 18</span></span></div>' +
+    '<div class="row" style="gap:8px">' + tile((me.total / 18).toFixed(1), 'Points per round') + tile(best, 'Best round') + tile(wins.length, 'Round wins') + '</div>' +
+    '<div class="row" style="gap:8px">' + tile('1 of 3', 'Jokers used') + tile('0', 'Missed picks') + tile('18/18', 'On time') + '</div>' +
+    '<section class="card" style="display:flex;flex-direction:column;gap:10px"><h2 class="display" style="font-size:22px">What you’re good at</h2>' +
+      '<div class="col" style="gap:6px"><div class="row" style="gap:8px"><span class="tag ok">Strongest</span><span class="small"><strong>' + sorted[0][0] + '</strong> ' + sorted[0][1] + '% and <strong>' + sorted[1][0] + '</strong> ' + sorted[1][1] + '%</span></div>' +
+      '<div class="row" style="gap:8px"><span class="tag warn">Weakest</span><span class="small"><strong>' + sorted[sorted.length - 1][0] + '</strong> ' + sorted[sorted.length - 1][1] + '%</span></div>' +
+      '<p class="small muted" style="margin:4px 0 0;line-height:1.45">You call the race winner more often than the league average (44% against 36%), but you’re below average on the first team to lose a car.</p></div>' +
+      ACC.map(function (a) { var up = a[1] >= a[2]; return '<div class="col" style="gap:3px"><div class="row" style="justify-content:space-between"><span class="small" style="font-weight:600">' + a[0] + '</span><span class="small"><strong>' + a[1] + '%</strong> <span class="muted">· league ' + a[2] + '%</span></span></div><span style="position:relative;height:8px;border-radius:4px;background:var(--sunk)"><span style="position:absolute;left:0;top:0;bottom:0;border-radius:4px;width:' + a[1] + '%;background:' + (up ? 'var(--pos)' : 'var(--neg)') + '"></span><span title="League average" style="position:absolute;top:-3px;bottom:-3px;width:2px;left:' + a[2] + '%;background:var(--text);opacity:.7"></span></span></div>'; }).join('') +
+      '<span class="small muted">Bar: how often you got it right. Line: league average.</span></section>' +
+    '<section class="card" style="display:flex;flex-direction:column;gap:10px"><div class="row" style="justify-content:space-between"><h2 class="display" style="font-size:22px">Points per round</h2><span class="small muted">Best: round ' + (bestIdx + 1) + ', ' + best + ' pts</span></div>' +
+      '<div class="row" role="img" aria-label="Points per round, rounds 1 to 18. Best was round ' + (bestIdx + 1) + ' with ' + best + ' points." style="gap:3px;height:110px;align-items:stretch">' + bars + '</div>' +
+      '<div class="row small muted" style="justify-content:space-between"><span>R1</span><span>R9</span><span>R18</span></div></section>' +
+    '<section class="card" style="display:flex;flex-direction:column;gap:2px"><h2 class="display" style="font-size:22px;margin-bottom:6px">Your habits</h2>' +
+      [['Favourite winner pick', flag('GB') + 'Lando Norris, 9 times'], ['Team you back most', 'McLaren'], ['Lone wolf calls', '3 this season'], ['Joker', jokerText], ['Round wins', wins.map(function (r) { return r[2]; }).join(', ')]].map(function (x) { return '<div class="tbl-row" style="grid-template-columns:1fr auto;min-height:44px;gap:12px"><span class="small muted">' + x[0] + '</span><span class="small" style="font-weight:600;text-align:right">' + x[1] + '</span></div>'; }).join('') +
+    '</section>' +
+    '<p class="small muted" style="margin:0">Sample data. In the live app your stats update after every confirmed race.</p></main>';
+}
+
+function statsCard() {
+  var me = PLAYERS.filter(function (p) { return p.n === S.me; })[0], wins = RACES.filter(function (r) { return r[5] === S.me; }).length;
+  var series = seasonSeries(me), per = series.map(function (v, i) { return i ? v - series[i - 1] : v; }), best = Math.max.apply(null, per);
+  var tile = function (v, l) { return '<div class="col" style="flex:1;min-width:0;padding:10px;border-radius:10px;background:var(--sunk);gap:2px"><span class="big" style="font-size:26px;line-height:1">' + v + '</span><span class="small muted" style="font-size:11px">' + l + '</span></div>'; };
+  var spark = per.slice(-8).map(function (v) { return '<span style="flex:1;align-self:flex-end;height:' + Math.max(8, v / best * 100) + '%;border-radius:2px 2px 0 0;background:' + (v === best ? 'var(--purple)' : 'var(--accent)') + '"></span>'; }).join('');
+  return '<section class="card" aria-labelledby="ys" style="display:flex;flex-direction:column;gap:10px"><div class="row" style="justify-content:space-between"><h2 id="ys" class="display" style="font-size:24px">Your season</h2><span class="small muted">After round 18</span></div>' +
+    '<div class="row" style="gap:8px">' + tile((me.total / 18).toFixed(1), 'Per round') + tile(best, 'Best round') + tile(wins, 'Round wins') + '</div>' +
+    '<div class="row" style="gap:12px;align-items:stretch"><div class="col" style="flex:1;gap:6px;justify-content:center"><div class="row" style="gap:8px"><span class="tag ok">Strongest</span><span class="small">Both cars finish · 78%</span></div><div class="row" style="gap:8px"><span class="tag warn">Weakest</span><span class="small">First team out · 6%</span></div></div>' +
+    '<div class="row" role="img" aria-label="Points in your last 8 rounds" style="flex:none;width:96px;height:52px;gap:3px;align-items:stretch">' + spark + '</div></div>' +
+    '<button class="btn ghost block" data-go="stats">See all your stats</button></section>';
+}
+
+function recapCard() {
+  var sp = pickSplit(), tot = sp[0].total, w = sp[0];
+  var lones = []; sp.forEach(function (c) { c.lone.forEach(function (o) { lones.push({ who: o.who[0], what: c.def.label + ': ' + o.label }); }); });
+  var line = function (k, v) { return '<div class="col" style="gap:2px"><span class="label" style="font-size:11px">' + k + '</span><span class="small" style="line-height:1.45">' + v + '</span></div>'; };
+  return '<section class="card" aria-labelledby="rc18" style="display:flex;flex-direction:column;gap:12px"><div class="row" style="justify-content:space-between"><h2 id="rc18" class="display" style="font-size:24px">Round 18 recap</h2><span class="small muted">United States GP</span></div>' +
+    line('Round winner', '<strong>Jack</strong>, 22 points') +
+    line('Lead change', '<strong>Ellie</strong> takes P1. Dad drops to second, 7 points back.') +
+    line('How the league picked the winner', w.opts[0].n + ' of ' + tot + ' backed ' + esc(w.opts[0].label) + (w.opts[0].hit ? ' <span class="up">✓</span>' : '') + '. The rest were split ' + w.opts.slice(1).map(function (o) { return esc(o.label) + ' ' + o.n; }).join(', ') + '.') +
+    (lones.length ? '<div class="col" style="gap:6px;padding-top:10px;border-top:1px solid var(--line)"><span class="label" style="font-size:11px">Lone wolves</span>' + lones.slice(0, 3).map(function (l) { return '<div class="row" style="gap:8px"><span class="purple">Lone wolf</span><span class="small"><strong>' + esc(l.who) + '</strong> · ' + esc(l.what) + '</span></div>'; }).join('') + (lones.length > 3 ? '<span class="small muted">and ' + (lones.length - 3) + ' more</span>' : '') + '</div>' : '') +
+    '<button class="btn ghost block" data-split="1">See how everyone picked</button></section>';
+}
+
+/* ---------- Home ---------- */
+function home() {
+  var cd = countdown(), sess = S.sprint ? 'sprint' : 'gp';
+  var done = S.submitted.gp && (!S.sprint || S.submitted.sprint);
+
+  return top() + '<main class="screen">' +
+    '<section class="card hero" style="display:flex;flex-direction:column;gap:14px;padding-bottom:22px" aria-labelledby="nx">' +
+      '<div class="col" style="gap:6px"><div class="row" style="justify-content:space-between"><span class="label">Next up · Round 19</span><span class="lights" aria-hidden="true">' + [0,1,2,3,4].map(function (i) { return '<span class="' + (i < Math.max(0, 5 - cd.d) ? 'on' : '') + '"></span>'; }).join('') + '</span></div><h1 id="nx" class="display" style="font-size:44px">Mexico City Grand Prix</h1><span class="small muted">Sun 1 Nov · lights out 20:00 UK</span></div>' +
+      '<div class="row" style="gap:8px">' + [[cd.d, 'days'], [cd.h, 'hrs'], [cd.m, 'min']].map(function (x) { return '<div class="cd"><div class="big" style="font-size:38px;line-height:1">' + x[0] + '</div><div class="small muted" style="font-size:10px;margin-top:2px;text-transform:uppercase;letter-spacing:.1em">' + x[1] + '</div></div>'; }).join('') + '</div>' +
+      '<div class="row small"><span class="ic ' + (done ? 'ok' : 'warn') + '">' + (done ? '✓' : '!') + '</span><span>' + (done ? 'Your picks are in. Last submitted ' + ukTime(S.submittedAt.gp) + '.' : (S.submittedAt.gp ? 'You have changes that aren’t submitted. Last submitted ' + ukTime(S.submittedAt.gp) + '.' : 'You haven’t made your picks yet')) + '</span></div>' +
+      '<button class="btn primary block" data-go="picks">' + (done ? 'Review my picks' : 'Make my picks') + '</button>' +
+    '</section>' +
+    (function () { var b = revScore(S.me, CONFIRMED), pos = PLAYERS.map(function (p) { return p.n; }).indexOf(S.me) + 1;
+      return '<section class="card" aria-labelledby="yl" style="display:flex;flex-direction:column;gap:10px"><div class="row" style="justify-content:space-between"><h2 id="yl" class="display" style="font-size:26px">Your last race</h2><span class="small muted">Round 18 · Austin</span></div>' +
+        '<div class="row" style="gap:16px"><span class="big" style="font-size:52px;line-height:1;color:var(--purple)">' + b.total + '</span><span class="col" style="gap:2px"><span style="font-weight:600">points · round winner</span><span class="small muted">' + b.lines.filter(function (l) { return l.pts; }).length + ' of 10 picks scored · now ' + pos + (pos === 1 ? 'st' : pos === 2 ? 'nd' : pos === 3 ? 'rd' : 'th') + ' in the league</span></span></div>' +
+        (function () { var e = REV_PICKS[S.me], lock = CONFIRMED.lock; if (b.basis !== 'own') return '<div class="row small" style="gap:8px;padding:10px 12px;border-radius:10px;background:var(--warn-soft);color:var(--warn)"><span aria-hidden="true">⏱</span><span>No picks submitted in time. Your ' + esc(e.carry) + ' picks were carried over.</span></div>';
+          var m = function (t) { var p = t.split(':'); return +p[0] * 60 + +p[1]; }, diff = m(lock) - m(e.at), h = Math.floor(diff / 60), mm = diff % 60;
+          var before = diff <= 0 ? 'after the original lock, accepted by ABRC' : (h ? h + 'h ' : '') + (mm ? mm + 'm ' : '') + 'before lights out';
+          return '<div class="row small" style="gap:8px;padding:10px 12px;border-radius:10px;background:var(--sunk)"><span aria-hidden="true">⏱</span><span><strong>Submitted Sun 25 Oct, ' + e.at + ' UK</strong> · ' + before + '</span></div>'; })() +
+        '<button class="btn ghost block" data-bd="' + esc(S.me) + '" data-mode="player">See my breakdown</button></section>'; })() +
+    recapCard() +
+    statsCard() +
+    '<button class="card row" data-go="nominations" style="text-align:left;width:100%"><span class="ic ' + (S.nomsSealed ? 'ok' : 'warn') + '">' + (S.nomsSealed ? '✓' : '!') + '</span><span class="col" style="gap:2px"><span style="font-weight:600">Season nominations</span><span class="small muted">' + (S.nomsSealed ? 'Sealed. Revealed after the final race.' : 'Four sealed picks, worth up to 50 points') + '</span></span><span class="chev">›</span></button>' +
+    '</main>';
+}
+
+var CHAMP_ORDER = (function () { var o = DSTAND.map(function (x) { return x[0]; }); DRIVERS.forEach(function (d) { if (o.indexOf(d[0]) < 0) o.push(d[0]); }); return o; })();
+var CHAMP_PTS = {}; DSTAND.forEach(function (x) { CHAMP_PTS[x[0]] = x[2]; });
+var PRACTICE = {
+  FP1: [['NOR', '1:18.214'], ['LEC', '1:18.302'], ['VER', '1:18.355'], ['RUS', '1:18.490'], ['PIA', '1:18.511']],
+  FP2: [['VER', '1:17.640'], ['NOR', '1:17.702'], ['PIA', '1:17.815'], ['HAM', '1:17.903'], ['LEC', '1:17.948']],
+  FP3: [['LEC', '1:17.412'], ['NOR', '1:17.455'], ['VER', '1:17.530'], ['ANT', '1:17.618'], ['PIA', '1:17.660']]
+};
+function aboutRace() {
+  return '<button class="slot" data-about="1" aria-haspopup="dialog" style="min-height:60px">' +
+    '<span class="pos sm" aria-hidden="true" style="font-size:18px">i</span>' +
+    '<span class="col" style="flex:1;gap:2px;min-width:0"><span class="name">About this race</span><span class="small muted">The circuit and last year’s race</span></span>' +
+    '<span class="chev" aria-hidden="true">›</span></button>';
+}
+function aboutSheet() {
+  return '<div class="sheet-wrap" data-close="1"><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="ab-t"><div class="sheet-head"><div class="col" style="gap:2px"><span class="label">Round 19</span><h2 id="ab-t" class="display" style="font-size:28px">Mexico City GP</h2></div><button class="back" data-close="1" aria-label="Close" style="margin:0"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>' +
+    '<div class="sheet-list" style="padding:4px 20px 24px;display:flex;flex-direction:column;gap:8px"><span style="font-weight:700">The circuit</span><p style="margin:0;line-height:1.55;font-size:14px">Mexico City is a race shaped by altitude. The thin air leaves the cars short of grip and makes it hard to keep engines and brakes cool, so reliability and tyre management can decide the result as much as outright pace. The long run down to the first corner makes the start one of the most important of the year, and it stays the best place to overtake all race. The track is often dusty and slippery, which catches drivers out, and the final section through the packed stadium gives it a real big-event atmosphere.</p><span style="font-weight:700;margin-top:4px">Last year</span><p style="margin:0;line-height:1.55;font-size:14px">Lando was untouchable. He turned pole into a lights-to-flag win by more than 30 seconds, the biggest winning margin of the season, and took the championship lead from Oscar by a single point. Behind him it was chaos on the long run to Turn 1: Max went across the grass, Charles briefly took the lead by cutting the corner and had to hand it back, and Oscar dropped to ninth before recovering to fifth. Charles held on to second after Sainz stopped on the penultimate lap and a late Virtual Safety Car ended Max’s charge in third, while Ollie Bearman took a career-best fourth for Haas.</p></div></div></div>';
+}
+
+function formGuide() {
+  var tab = S.formTab || 'practice', fp = S.fp || 'FP3';
+  var rowsOf = function (list, right) { return list.map(function (x, i) { var d = DRV[x[0]]; return '<div class="tbl-row" style="grid-template-columns:30px 4px 1fr auto;min-height:40px"><span class="tpos' + (i === 0 ? ' p1' : '') + '" style="width:26px;height:24px;font-size:15px">' + (i + 1) + '</span><span class="stripe" style="height:22px;background:' + d.color + '"></span><span class="small" style="font-weight:600">' + flag(d.cc) + esc(d.name) + ' <span class="muted" style="font-weight:500">' + esc(d.team) + '</span></span><span class="small" style="font-weight:700">' + right(x) + '</span></div>'; }).join(''); };
+  var body = tab === 'practice'
+    ? '<div class="seg" style="grid-auto-columns:1fr" role="group" aria-label="Practice session">' + ['FP1', 'FP2', 'FP3'].map(function (k) { return '<button aria-pressed="' + (fp === k) + '" data-fp="' + k + '">' + k + '</button>'; }).join('') + '</div>' + rowsOf(PRACTICE[fp], function (x) { return x[1]; })
+    : '<span class="small muted">United States GP, Austin</span>' + rowsOf([['NOR'], ['VER'], ['PIA'], ['LEC'], ['RUS']], function () { return ''; });
+  return '<section class="card" aria-labelledby="fg" style="display:flex;flex-direction:column;gap:12px"><div class="row" style="justify-content:space-between"><h2 id="fg" class="label">Form guide</h2><span class="small muted">Grid after qualifying, Sat 31 Oct</span></div>' +
+    '<div class="seg" role="tablist" aria-label="Form guide">' + [['practice', 'Practice'], ['last', 'Last race']].map(function (x) { return '<button role="tab" aria-selected="' + (tab === x[0]) + '" data-form="' + x[0] + '">' + x[1] + '</button>'; }).join('') + '</div>' +
+    '<div class="col">' + body + '</div>' +
+    '</section>';
+}
+
+/* ---------- Picks ---------- */
+function picks() {
+  var sess = S.sprint ? S.session : 'gp', isSprint = sess === 'sprint';
+  var defs = DEFS[sess], pk = S.picks[sess], grid = GRID[sess], gpos = {}; grid.forEach(function (c, i) { gpos[c] = i + 1; });
+  var showGridPos = S.qualiDone || isSprint;
+  var slot = function (def) {
+    var v = pk[def.k], isT = def.kind === 'team', d = v ? (isT ? null : DRV[v]) : null;
+    var name = v ? (isT ? esc(v) : flag(d.cc) + esc(d.name)) : (isT ? 'Choose team' : 'Choose driver');
+    var color = v ? (isT ? TEAMS[v][0] : d.color) : 'var(--line)';
+    var sub = v && !isT ? teamPill(d.team) + (showGridPos ? ' <span class="small muted">Starts P' + gpos[v] + '</span>' : '') : '';
+    return '<button class="slot" data-open="' + def.k + '" aria-label="' + esc(def.label + ': ' + (v ? (isT ? v : d.name + ', ' + d.team) : 'not picked') + '. ' + def.pts + ' points') + '">' +
+      '<span class="pos' + (def.pos.length > 2 ? ' sm' : '') + '">' + def.pos + '</span><span class="chipbar" style="height:34px;background:' + color + '"></span>' +
+      '<span class="col" style="flex:1;gap:3px;min-width:0"><span class="small muted" style="font-weight:600">' + esc(def.label) + '</span><span class="name' + (v ? '' : ' empty') + '">' + name + '</span>' + (sub ? '<span class="row" style="gap:6px;flex-wrap:wrap">' + sub + '</span>' : '') + '</span>' +
+      '<span class="pts">' + def.pts + (def.pts === 1 ? ' pt' : ' pts') + '</span></button>';
+  };
+  var top = defs.filter(function (d) { return d.top; }), bonus = defs.filter(function (d) { return !d.top; });
+  var topVals = top.map(function (d) { return pk[d.k]; }).filter(Boolean);
+  var unique = topVals.filter(function (v, i) { return topVals.indexOf(v) === i; }).length === topVals.length;
+  var remaining = defs.filter(function (d) { return !pk[d.k]; }).length;
+  var jokerOn = S.joker && S.jokersLeft > 0, valid = remaining === 0 && unique;
+  var max = defs.reduce(function (a, d) { return a + d.pts; }, 0);
+  var shown = S.showGrid ? grid : grid.slice(0, 6);
+  var hrs = isSprint ? [['12:00', '22°', '5%'], ['13:00', '23°', '5%'], ['14:00', '23°', '10%']] : [['14:00', '24°', '10%'], ['15:00', '24°', '15%'], ['16:00', '23°', '25%']];
+  var submitted = S.submitted[sess];
+  var h = top_('Your picks') + '<main class="screen">' +
+    '<div class="col" style="gap:8px"><span class="label">Round 19' + (isSprint ? ' · Sprint' : '') + '</span><h1 class="display" style="font-size:36px">Mexico City GP</h1>' +
+    '<span class="tag acc" style="align-self:flex-start">' + (isSprint ? 'Sprint picks lock at sprint lights out, Sat' : 'Locks at lights out · ' + countdown().text + ' left') + '</span></div>' +
+    (S.sprint ? '<div class="seg" role="tablist" aria-label="Weekend sessions">' + [['sprint', 'Sprint', 'Sat 31 Oct'], ['gp', 'Grand Prix', 'Sun 1 Nov']].map(function (t) { var done = S.submitted[t[0]]; return '<button role="tab" aria-selected="' + (sess === t[0]) + '" data-session="' + t[0] + '">' + t[1] + '<small style="color:' + (done ? 'var(--pos)' : 'inherit') + '">' + (done ? '✓ Picks in' : 'To do') + ' · ' + t[2] + '</small></button>'; }).join('') + '</div>' : '') +
+    '<section class="card" aria-label="Race start" style="display:flex;flex-direction:column;gap:12px">' +
+      '<div class="grid2"><div class="col" style="gap:2px;padding:10px;border-radius:10px;background:var(--sunk)"><span class="label" style="font-size:11px">Local · Mexico City</span><span class="big" style="font-size:28px">' + (isSprint ? '12:00' : '14:00') + '</span><span class="small muted">CST · ' + (isSprint ? 'Sat 31 Oct' : 'Sun 1 Nov') + '</span></div>' +
+      '<div class="col" style="gap:2px;padding:10px;border-radius:10px;background:var(--accent-soft);color:var(--accent-text)"><span class="label" style="font-size:11px;color:inherit">UK</span><span class="big" style="font-size:28px">' + (isSprint ? '18:00' : '20:00') + '</span><span class="small">GMT · ' + (isSprint ? 'Sat 31 Oct' : 'Sun 1 Nov') + '</span></div></div>' +
+      '<div class="row"><span style="font-size:28px" aria-hidden="true">⛅</span><span class="col"><span style="font-weight:600">' + (isSprint ? '22°C, sunny spells' : '24°C, partly cloudy') + '</span><span class="small muted">Forecast at lights out · rain ' + hrs[0][2] + ' · wind ' + (isSprint ? '4' : '6') + ' mph</span></span></div>' +
+      '<div class="row" style="gap:6px">' + hrs.map(function (x) { return '<div class="col" style="flex:1;padding:8px;border-radius:8px;background:var(--sunk)"><span class="small muted" style="font-size:11px">' + x[0] + '</span><span style="font-weight:600">' + x[1] + '</span><span style="font-size:11px;color:var(--accent-text)">Rain ' + x[2] + '</span></div>'; }).join('') + '</div>' +
+    '</section>' +
+    aboutRace() +
+    (!S.qualiDone && !isSprint ? formGuide() : '<section class="card" aria-labelledby="gh" style="display:flex;flex-direction:column;gap:10px"><div class="row" style="justify-content:space-between"><h2 id="gh" class="label">' + (isSprint ? 'Sprint grid' : 'Starting grid') + '</h2><span class="small muted">' + (isSprint ? 'After sprint qualifying' : (S.qualiDone ? 'After qualifying' : 'Qualifying Sat 31 Oct')) + '</span></div>' +
+      (S.qualiDone || isSprint ? '<ol class="grid2" style="list-style:none;margin:0;padding:0 0 12px">' + shown.map(function (c, i) { var d = DRV[c]; return '<li class="gcell"><span class="big muted" style="width:26px;font-size:16px">P' + (i + 1) + '</span><span class="chipbar" style="height:28px;width:3px;background:' + d.color + '"></span><span class="col" style="min-width:0"><span class="big" style="font-size:16px;line-height:1.1">' + c + '</span><span style="font-size:11px" class="muted">' + flag(d.cc) + esc(d.name.split(' ').slice(1).join(' ')) + '</span><span style="font-size:10px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">' + esc(d.team) + '</span></span></li>'; }).join('') + '</ol><button class="btn ghost sm" style="align-self:flex-start;border:0;color:var(--accent-text);padding:0" data-act="grid" aria-expanded="' + S.showGrid + '">' + (S.showGrid ? 'Show top 6' : 'Show full grid (22)') + '</button>'
+        : '') +
+    '</section>') +
+    '<p class="small muted" style="margin:0">' + (jokerOn ? 'Joker played · up to ' + max * 2 + ' points' : 'Up to ' + max + ' points · ' + max * 2 + ' with a joker') + '</p>' +
+    '<section class="list" aria-label="' + (isSprint ? 'Sprint top three' : 'Top five') + '"><h2 class="label">' + (isSprint ? 'Sprint top three' : 'Top five') + '</h2>' + top.map(slot).join('') + '</section>' +
+    (bonus.length ? '<section class="list" aria-label="Race bonuses"><h2 class="label">Race bonuses</h2>' + bonus.map(slot).join('') + '</section>' : '<p class="small muted" style="margin:0;padding:12px;border-radius:12px;background:var(--sunk)">Sprint picks are the top three only. Race bonuses are on Sunday’s Grand Prix.</p>') +
+    '<button class="slot" data-act="joker" aria-pressed="' + jokerOn + '" ' + (S.jokersLeft === 0 ? 'disabled' : '') + ' style="' + (jokerOn ? 'border-color:var(--accent);background:var(--accent-soft)' : '') + '">' +
+      '<span class="pos" style="width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;background:' + (jokerOn ? 'var(--accent)' : 'var(--chip)') + ';color:' + (jokerOn ? 'var(--accent-ink)' : 'var(--muted)') + '">×2</span>' +
+      '<span class="col" style="flex:1;gap:2px"><span class="name">' + (S.jokersLeft === 0 ? 'No jokers left' : jokerOn ? (S.sprint ? 'Joker played for the weekend' : 'Joker played') : (S.sprint ? 'Play a joker this weekend' : 'Play a joker')) + '</span><span class="small muted">' + (S.jokersLeft === 0 ? 'You’ve used all ' + S.jokersTotal + ' jokers this season' : (S.sprint ? 'One joker doubles the sprint and the Grand Prix · ' : 'Doubles your points this race · ') + S.jokersLeft + ' of ' + S.jokersTotal + ' left') + '</span></span>' +
+      '<span class="switch" role="presentation" aria-checked="' + jokerOn + '"><span></span></span></button>' +
+    '<section class="card" aria-labelledby="rc" style="display:flex;flex-direction:column;gap:10px;background:var(--sunk)"><h2 id="rc" class="label">Rule check</h2>' +
+      [[remaining === 0, remaining === 0 ? 'All ' + defs.length + ' picks made' : remaining + ' of ' + defs.length + ' picks still to make'], [unique, 'No driver used twice in the ' + (isSprint ? 'top three' : 'top five')], [true, isSprint ? 'Before sprint lights out' : 'Before lights out']].concat(S.joker ? [[S.jokersLeft > 0, 'Joker available · ' + S.jokersLeft + ' of ' + S.jokersTotal + ' left']] : []).map(function (c) { return '<div class="check"><span class="ic ' + (c[0] ? 'ok' : 'warn') + '">' + (c[0] ? '✓' : '○') + '</span><span style="color:' + (c[0] ? 'inherit' : 'var(--muted)') + '">' + c[1] + '</span></div>'; }).join('') +
+    '</section></main>' +
+    '<div class="dock"><div class="dock-in">' + (submitted
+      ? '<div class="row" role="status"><span class="ic ok">✓</span><span class="col" style="flex:1"><span style="font-weight:600">' + (isSprint ? 'Sprint picks submitted' : 'Picks submitted') + (jokerOn ? ' · joker played' : '') + '</span><span class="small muted">Last submitted ' + ukTime(S.submittedAt[sess]) + '</span><span class="small muted">' + beforeLock(S.submittedAt[sess]) + ' · change them any time until then</span></span><button class="btn ghost sm" data-act="edit">Edit</button></div>'
+      : (S.submittedAt[sess] ? '<p class="small" style="margin:0 0 8px;color:var(--warn)">Last submitted ' + ukTime(S.submittedAt[sess]) + '. Submit again to save your changes.</p>' : '') + '<button class="btn primary block" data-act="submit" ' + (valid ? '' : 'disabled') + '>' + (valid ? (isSprint ? 'Submit sprint picks' : 'Submit picks') + (jokerOn ? ' · joker played' : '') : remaining > 0 ? remaining + (remaining === 1 ? ' pick' : ' picks') + ' to go' : 'Fix the duplicate driver') + '</button>') + '</div></div>';
+  return h;
+}
+function top_(t) { return top(t, 'home'); }
+
+function leagueTable() {
+  var rows = PLAYERS.map(function (p, i) {
+    var mv = p.move > 0 ? '<span class="up">▲' + p.move + '</span>' : p.move < 0 ? '<span class="down">▼' + (-p.move) + '</span>' : '<span class="same">–</span>';
+    return '<button class="tbl-row" data-bd="' + esc(p.n) + '" data-mode="player" aria-label="' + esc(p.n + ', ' + p.total + ' points. See last race breakdown') + '" style="grid-template-columns:36px 28px 1fr auto 52px;width:100%;background:transparent;border-left:0;border-right:0;border-bottom:0;padding:0;text-align:left"><span class="tpos' + (i === 0 ? ' p1' : '') + '">' + (i + 1) + '</span>' + mv +
+      '<span class="row" style="gap:10px"><span class="stripe" style="background:' + p.lc + '"></span><span style="font-weight:600">' + esc(p.n) + (p.n === S.me ? ' <span class="tag acc" style="min-height:18px;font-size:10px">You</span>' : '') + '</span></span>' +
+      (p.last === Math.max.apply(null, PLAYERS.map(function (q) { return q.last; })) ? '<span class="purple" title="Best score last race">+' + p.last + '</span>' : '<span class="small up" style="font-weight:600">+' + p.last + '</span>') + '<span class="big" style="font-size:22px;text-align:right">' + p.total + '</span></button>';
+  }).join('');
+  return '<section class="card" aria-labelledby="lt"><div class="row" style="justify-content:space-between;margin-bottom:6px"><h2 id="lt" class="display" style="font-size:26px">League table</h2><span class="small muted">Tap a name for their last race</span></div>' + rows + '</section>';
+}
+
+/* ---------- Season ---------- */
+function season() {
+  var t = S.seasonTab, body = '';
+  if (t === 'league') {
+    body = null;
+  } else if (t === 'races') {
+    body = RACES.map(function (r) {
+      var st = r[3], w = r[4] ? DRV[r[4]] : null, sp = r[6];
+      var tag = st === 'next' ? '<span class="tag acc">Next</span>' : st === 'cancelled' ? '<span class="tag warn">Cancelled</span>' : st === 'moved' ? '<span class="tag warn">Moved</span>' : st === 'up' ? '<span class="tag">Upcoming</span>' : '';
+      return '<div class="tbl-row" style="grid-template-columns:30px 1fr auto;padding:8px 0;' + (st === 'next' ? 'background:var(--accent-soft);margin:0 -16px;padding:8px 16px;' : '') + '"><span class="big muted" style="font-size:18px">' + r[0] + '</span>' +
+        '<span class="col" style="gap:3px;min-width:0"><span class="row" style="gap:6px"><span style="font-weight:600;' + (st === 'cancelled' ? 'text-decoration:line-through;color:var(--muted)' : '') + '">' + esc(r[2]) + '</span>' + (sp ? '<span class="tag" style="min-height:18px;font-size:10px">Sprint</span>' : '') + '</span>' +
+        '<span class="small muted">' + esc(r[1]) + (w ? ' · ' + flag(w.cc) + esc(w.name.split(' ').slice(1).join(' ')) + ' won · top player: ' + esc(r[5]) : st === 'moved' ? '' : '') + (st === 'cancelled' ? ' · not replaced' : '') + '</span></span>' + tag + '</div>';
+    }).join('');
+  } else if (t === 'drivers') {
+    var lead = DSTAND[0][2];
+    body = DSTAND.map(function (x, i) { var d = DRV[x[0]]; return '<div class="tbl-row" style="grid-template-columns:28px 1fr 56px"><span class="big" style="font-size:20px;color:' + (i < 3 ? 'var(--accent-text)' : 'inherit') + '">' + (i + 1) + '</span><span class="col" style="gap:4px"><span style="font-weight:600">' + flag(d.cc) + esc(d.name) + '</span><span style="height:6px;border-radius:3px;background:var(--sunk)"><span style="display:block;height:6px;border-radius:3px;width:' + (x[2] / lead * 100).toFixed(1) + '%;background:' + d.color + '"></span></span></span><span class="big" style="font-size:22px;text-align:right">' + x[2] + '</span></div>'; }).join('') + '<p class="small muted" style="margin:10px 0 0">Top 12 shown</p>';
+  } else {
+    var tl = TSTAND[0][2];
+    body = TSTAND.map(function (x, i) { return '<div class="tbl-row" style="grid-template-columns:28px 1fr 56px"><span class="big" style="font-size:20px;color:' + (i < 3 ? 'var(--accent-text)' : 'inherit') + '">' + (i + 1) + '</span><span class="col" style="gap:4px"><span style="font-weight:600">' + esc(x[0]) + '</span><span style="height:6px;border-radius:3px;background:var(--sunk)"><span style="display:block;height:6px;border-radius:3px;width:' + (x[2] / tl * 100).toFixed(1) + '%;background:' + TEAMS[x[0]][0] + '"></span></span></span><span class="big" style="font-size:22px;text-align:right">' + x[2] + '</span></div>'; }).join('');
+  }
+  return top() + '<main class="screen"><div class="col" style="gap:6px"><span class="label">18 of 23 rounds complete</span><h1 class="display" style="font-size:36px">The season so far</h1></div>' +
+    '<div style="height:8px;border-radius:4px;background:var(--sunk)" role="img" aria-label="18 of 23 rounds complete"><div style="width:78%;height:8px;border-radius:4px;background:var(--accent)"></div></div>' +
+    '<div class="seg" role="tablist" aria-label="Season views">' + [['league', 'League'], ['races', 'Races'], ['drivers', 'Drivers'], ['teams', 'Teams']].map(function (x) { return '<button role="tab" aria-selected="' + (t === x[0]) + '" data-season="' + x[0] + '">' + x[1] + '</button>'; }).join('') + '</div>' +
+    (t === 'league' ? leagueTable() + chart() : '<section class="card" style="padding-top:6px;padding-bottom:6px">' + body + '</section>') +
+    '<p class="small muted" style="margin:0">' + (t === 'league' ? 'Players, picks and points are sample data.' : 'Calendar dates and venues are the real 2026 schedule. Results and standings are sample data.') + '</p></main>';
+}
+
+/* ---------- Nominations ---------- */
+function nominations() {
+  var remaining = NOMS.filter(function (n) { return !S.noms[n.k]; }).length;
+  return top('Season nominations', 'home') + '<main class="screen">' +
+    '<div class="col" style="gap:8px"><span class="label">2027 season</span><h1 class="display" style="font-size:36px">Season nominations</h1><span class="tag acc" style="align-self:flex-start">Locks Sun 28 Feb, 18:00</span></div>' +
+    '<div class="card row" style="align-items:flex-start;background:var(--sunk)"><span style="font-size:22px" aria-hidden="true">🔒</span><span class="col" style="gap:4px"><span style="font-weight:600">Your nominations are sealed</span><span class="small muted" style="line-height:1.45">Only ABRC can see them, and only after the deadline. Everyone’s nominations and points are revealed after the final race.</span></span></div>' +
+    '<section class="list"><h2 class="label">Up to 50 points</h2>' + NOMS.map(function (n) {
+      var v = S.noms[n.k], isT = n.kind === 'team', d = v && !isT ? DRV[v] : null;
+      return '<button class="slot" data-nom="' + n.k + '"><span class="chipbar" style="height:40px;background:' + (v ? (isT ? TEAMS[v][0] : d.color) : 'var(--line)') + '"></span><span class="col" style="flex:1;gap:3px"><span class="small muted">' + esc(n.label) + '</span><span class="name' + (v ? '' : ' empty') + '">' + (v ? (isT ? esc(v) : flag(d.cc) + esc(d.name)) : (isT ? 'Choose team' : 'Choose driver')) + '</span></span><span class="big" style="font-size:18px;color:var(--accent-text)">' + n.pts + ' pts</span></button>';
+    }).join('') + '</section></main>' +
+    '<div class="dock"><div class="dock-in">' + (S.nomsSealed ? '<div class="row" role="status"><span style="font-size:22px" aria-hidden="true">🔒</span><span class="col" style="flex:1"><span style="font-weight:600">Nominations sealed</span><span class="small muted">Change them until Sun 28 Feb, 18:00</span></span><button class="btn ghost sm" data-act="unseal">Edit</button></div>'
+      : '<button class="btn primary block" data-act="seal" ' + (remaining ? 'disabled' : '') + '>' + (remaining ? remaining + (remaining === 1 ? ' nomination' : ' nominations') + ' to go' : 'Seal my nominations') + '</button>') + '</div></div>';
+}
+
+/* ---------- More / admin ---------- */
+function more() {
+  return top() + '<main class="screen"><h1 class="display" style="font-size:36px">More</h1>' +
+    '<section class="card menu">' +
+      '<button data-tour-open="1"><span class="ic ok" aria-hidden="true">?</span><span class="col"><span style="font-weight:600">Preview guide</span><span class="small muted">Things to try</span></span><span class="chev">›</span></button>' +
+      '<a href="#stats" data-go="stats"><span class="ic ok" aria-hidden="true">%</span><span class="col"><span style="font-weight:600">Your stats</span><span class="small muted">Strengths, habits and points per round</span></span><span class="chev">›</span></a>' +
+      '<a href="#rules" data-go="rules"><span class="ic ok" aria-hidden="true">i</span><span class="col"><span style="font-weight:600">Rules and scoring</span><span class="small muted">' + (S.admin ? 'Edit points, jokers and missed picks' : 'Points, jokers, missed picks') + '</span></span><span class="chev">›</span></a>' +
+      '<a href="#nominations" data-go="nominations"><span class="ic ok" aria-hidden="true">🔒</span><span class="col"><span style="font-weight:600">Season nominations</span><span class="small muted">' + (S.nomsSealed ? 'Sealed' : 'Not yet sealed') + '</span></span><span class="chev">›</span></a>' +
+    '</section>' +
+    '<section class="card" style="display:flex;flex-direction:column;gap:12px"><h2 class="label">Appearance</h2><div class="seg" role="group" aria-label="Appearance">' + [['dark', 'Dark'], ['light', 'Light'], ['auto', 'Match phone']].map(function (x) { return '<button aria-pressed="' + (S.theme === x[0]) + '" data-theme-set="' + x[0] + '">' + x[1] + '</button>'; }).join('') + '</div></section>' +
+    '<section class="card" style="display:flex;flex-direction:column;gap:12px"><h2 class="label">News</h2>' + sw('spoilerShield', 'Spoiler shield', 'Hide news from lights out until the next morning') + '</section>' +
+    '<section class="card" style="display:flex;flex-direction:column;gap:12px"><h2 class="label">Preview options</h2>' +
+      sw('admin', 'View as ABRC (Race Control)', 'Shows the admin tools Emma and Carl see') +
+      sw('sprint', 'Sprint weekend', 'Adds a Saturday sprint to the Mexico City picks') +
+      sw('qualiDone', 'Qualifying finished', 'Shows the starting grid on the picks screen') +
+      sw('postRace', 'Race has started', 'Shows the News tab with the spoiler shield') +
+      '<div class="row"><span class="col" style="flex:1"><span style="font-weight:600">Jokers left</span><span class="small muted">Try 0 to see the used-up state</span></span><div class="seg" style="grid-auto-columns:44px">' + [0, 1, 2, 3].filter(function (n) { return n <= S.jokersTotal; }).map(function (n) { return '<button aria-pressed="' + (S.jokersLeft === n) + '" data-jokers="' + n + '">' + n + '</button>'; }).join('') + '</div></div>' +
+    '</section>' +
+    (S.admin ? '<section class="card menu" aria-label="ABRC tools"><h2 class="label" style="padding-bottom:6px">ABRC tools</h2>' +
+      '<a href="#weekend" data-go="weekend"><span class="ic ok">⏱</span><span class="col"><span style="font-weight:600">Race weekend guide</span><span class="small muted">What happens when, and what you need to do</span></span><span class="chev">›</span></a>' +
+      '<a href="#review" data-go="review"><span class="ic ' + (S.review.confirmed ? 'ok' : 'warn') + '">' + (S.review.confirmed ? '✓' : '!') + '</span><span class="col"><span style="font-weight:600">Race review · Round 18</span><span class="small muted">' + (S.review.confirmed ? 'Scores confirmed' : 'Check and confirm the scores') + '</span></span><span class="chev">›</span></a>' +
+      '<a href="#followup" data-go="followup" data-fu="post"><span class="ic ' + (S.fu.shared && S.fu.kind === 'post' ? 'ok' : 'warn') + '">✎</span><span class="col"><span style="font-weight:600">Race follow-up</span><span class="small muted">Draft in Carl’s voice, share to WhatsApp</span></span><span class="chev">›</span></a>' +
+      '<a href="#followup" data-go="followup" data-fu="pre"><span class="ic warn">✎</span><span class="col"><span style="font-weight:600">Pre-race update · Round 19</span><span class="small muted">Ready Friday morning</span></span><span class="chev">›</span></a>' +
+      '<a href="#rules" data-go="rules"><span class="ic ok">✎</span><span class="col"><span style="font-weight:600">Scoring rules</span><span class="small muted">Points per pick, jokers, carry-over</span></span><span class="chev">›</span></a>' +
+      '<div style="display:flex;gap:12px;align-items:center;min-height:56px;border-top:1px solid var(--line)"><span class="ic ok">✓</span><span class="col"><span style="font-weight:600">Players, reminders, import</span><span class="small muted">On the desktop admin screens</span></span></div>' +
+    '</section>' : '') +
+    '<section class="card menu"><button data-signin="out"><span class="ic warn" aria-hidden="true">↩</span><span class="col"><span style="font-weight:600">Sign out</span><span class="small muted">See the sign-in screen</span></span></button></section>' +
+    '<p class="small muted" style="margin:0;line-height:1.5">This is a preview with sample players, picks and points. Nothing you do here is saved or sent.</p></main>';
+}
+function sw(key, title, sub) { return '<div class="row"><span class="col" style="flex:1"><span style="font-weight:600">' + title + '</span><span class="small muted">' + sub + '</span></span><button class="switch" role="switch" aria-checked="' + !!S[key] + '" aria-label="' + esc(title) + '" data-toggle="' + key + '"><span></span></button></div>'; }
+
+function ruleRow(label, val, key, changed, unit) {
+  return '<div class="tbl-row" style="grid-template-columns:1fr auto;min-height:52px"><span>' + esc(label) + '</span>' + (S.admin
+    ? '<span class="stepper"><button data-step="' + key + ':-1" aria-label="Decrease ' + esc(label) + '">−</button><output class="' + (changed ? 'changed' : '') + '" aria-live="polite">' + val + (unit || '') + '</output><button data-step="' + key + ':1" aria-label="Increase ' + esc(label) + '">+</button></span>'
+    : '<span class="big" style="font-size:20px">' + val + (unit || '') + '</span>') + '</div>';
+}
+function rdInit() {
+  if (S.rd) return;
+  var pts = {}; ['gp', 'sprint'].forEach(function (k) { DEFS[k].forEach(function (d) { pts[k + '.' + d.k] = d.pts; }); });
+  NOMS.forEach(function (n) { pts['nom.' + n.k] = n.pts; });
+  pts.jokers = S.jokersTotal; pts.carry = S.carry; S.rd = pts; S.rdBase = JSON.parse(JSON.stringify(pts));
+}
+function rules() {
+  rdInit();
+  var R = S.rd, B = S.rdBase, changes = Object.keys(R).filter(function (k) { return R[k] !== B[k]; }).length;
+  var sec = function (title, list) { return '<section class="card"><h2 class="display" style="font-size:24px;margin-bottom:6px">' + title + '</h2>' + list.join('') + '</section>'; };
+  var max = function (pref) { return Object.keys(R).filter(function (k) { return k.indexOf(pref + '.') === 0; }).reduce(function (a, k) { return a + R[k]; }, 0); };
+  return top('Rules and scoring', 'more') + '<main class="screen">' +
+    (S.admin ? '<div class="banner">You’re viewing as ABRC. Changes are logged with your name.</div>' : '') +
+    sec('Grand Prix picks · up to ' + max('gp'), DEFS.gp.map(function (d) { var k = 'gp.' + d.k; return ruleRow(d.label, R[k], k, R[k] !== B[k]); })) +
+    sec('Sprint picks · up to ' + max('sprint'), DEFS.sprint.map(function (d) { var k = 'sprint.' + d.k; return ruleRow(d.label, R[k], k, R[k] !== B[k]); })) +
+    sec('Season nominations (sealed)', NOMS.map(function (n) { var k = 'nom.' + n.k; return ruleRow(n.label, R[k], k, R[k] !== B[k]); })) +
+    sec('Jokers and missed picks', [ruleRow('Jokers per season', R.jokers, 'jokers', R.jokers !== B.jokers), ruleRow('Carried-over picks score', R.carry, 'carry', R.carry !== B.carry, '%')]) +
+    '<section class="card small muted" style="line-height:1.5">A joker doubles that race’s points. On a sprint weekend one joker covers both races, and it’s returned if the race is cancelled. Miss the deadline and your last picks carry over at the percentage above. Miss two in a row and you score 0. Positions score for the exact place only.</section>' +
+    '</main>' + (S.admin && changes ? '<div class="dock"><div class="dock-in" style="display:flex;flex-direction:column;gap:8px">' +
+      '<label class="row small" style="gap:8px"><span style="font-weight:600;white-space:nowrap">Apply from</span><select data-applyfrom aria-label="Apply from"><option value="next"' + (S.applyFrom === 'next' ? ' selected' : '') + '>Round 19 · Mexico City (next race)</option><option value="all"' + (S.applyFrom === 'all' ? ' selected' : '') + '>Round 1 · rescore the whole season</option></select></label>' +
+      (S.applyFrom === 'all' ? '<span class="small" style="color:var(--warn)">Rescoring changes past points. You’ll see the new table before it goes live.</span>' : '') +
+      '<div class="row" style="gap:8px"><button class="btn ghost" data-rules="discard">Discard</button><button class="btn primary" style="flex:1" data-rules="save">Save ' + changes + (changes === 1 ? ' change' : ' changes') + '</button></div></div></div>' : '');
+}
+
+var REV_PICKS = {
+  'Ellie': { at: '19:41', p: { p1: 'NOR', p2: 'PIA', p3: 'VER', p4: 'HAM', p5: 'RUS', fl: 'LEC', dotd: 'NOR', pit: 'Williams', out: 'Alpine', both: 'McLaren' } },
+  'Dad': { at: '11:02', p: { p1: 'LEC', p2: 'VER', p3: 'NOR', p4: 'RUS', p5: 'HAM', fl: 'NOR', dotd: 'VER', pit: 'McLaren', out: 'Ferrari', both: 'Ferrari' } },
+  'Jack': { at: '18:15', p: { p1: 'NOR', p2: 'VER', p3: 'LEC', p4: 'PIA', p5: 'ANT', fl: 'HAM', dotd: 'NOR', pit: 'Williams', out: 'Alpine', both: 'McLaren' } },
+  'Mum': { at: '19:58', p: { p1: 'VER', p2: 'NOR', p3: 'PIA', p4: 'RUS', p5: 'LEC', fl: 'LEC', dotd: 'LEC', pit: 'Ferrari', out: 'Haas', both: 'Mercedes' } },
+  'Grandad': { carry: 'Singapore GP', p: { p1: 'NOR', p2: 'LEC', p3: 'VER', p4: 'RUS', p5: 'PIA', fl: 'LEC', dotd: 'VER', pit: 'Mercedes', out: 'Audi', both: 'Haas' } },
+  'Auntie Sue': { at: '20:02', late: true, carry: 'Singapore GP', p: { p1: 'PIA', p2: 'NOR', p3: 'VER', p4: 'LEC', p5: 'RUS', fl: 'LEC', dotd: 'NOR', pit: 'Williams', out: 'Aston Martin', both: 'Alpine' },
+    cp: { p1: 'LEC', p2: 'VER', p3: 'NOR', p4: 'PIA', p5: 'HAM', fl: 'NOR', dotd: 'HAM', pit: 'Red Bull', out: 'Audi', both: 'Haas' } }
+};
+var REV_BEFORE = { 'Ellie': 268, 'Dad': 270, 'Jack': 240, 'Mum': 241, 'Grandad': 227, 'Auntie Sue': 208 };
+function revResult(R) {
+  R = R || S.review;
+  return { p1: 'NOR', p2: 'VER', p3: 'PIA', p4: 'LEC', p5: 'RUS', fl: 'LEC', dotd: R.dotd || null, pit: 'Williams', out: R.out === 'swap' ? 'Ferrari' : 'Haas', both: ['McLaren', 'Ferrari', 'Mercedes', 'Williams'] };
+}
+function revScore(name, snap) {
+  var R = snap || S.review, res = revResult(R), e = REV_PICKS[name];
+  var sueAuto = R.lock >= '20:02', late = e.late && !(sueAuto || R.sue === 'ontime');
+  var basis = 'own', picks = e.p, factor = 1;
+  if (name === 'Grandad') { basis = R.grandad === 'keep' ? 'carry' : 'removed'; factor = R.grandad === 'keep' ? S.carry / 100 : 0; }
+  if (late) { basis = 'carry'; picks = e.cp; factor = S.carry / 100; }
+  var lines = DEFS.gp.map(function (d) {
+    var pick = picks[d.k], actual = res[d.k], hit;
+    if (d.k === 'both') { hit = res.both.indexOf(pick) >= 0; actual = res.both.join(', '); } else hit = actual != null && pick === actual;
+    var nm = function (v) { return v == null ? 'Not entered yet' : (DRV[v] ? flag(DRV[v].cc) + DRV[v].name : v); };
+    return { label: d.label, pick: nm(pick), actual: d.k === 'both' ? actual : nm(actual), pts: hit ? d.pts : 0, pending: actual == null };
+  });
+  var raw = lines.reduce(function (a, l) { return a + l.pts; }, 0), total = Math.round(raw * factor * 10) / 10;
+  var how = basis === 'own' ? (e.late ? (sueAuto ? 'Own picks · on time under new lock' : 'Own picks · accepted as on time') : 'Own picks') : basis === 'carry' ? 'Carry-over · ' + S.carry + '% of ' + raw : 'Carry-over removed';
+  return { name: name, lines: lines, raw: raw, factor: factor, total: total, how: how, basis: basis, at: e.at, late: e.late, carry: e.carry };
+}
+var CONFIRMED = { lock: '20:00', dotd: 'NOR', sue: 'ontime', grandad: 'keep', out: 'ok' };
+function breakdownSheet() {
+  var player = S.bdMode === 'player', R0 = player ? CONFIRMED : S.review, mine = player && S.bd === S.me;
+  var b = revScore(S.bd, player ? CONFIRMED : null), e = REV_PICKS[S.bd], Q = S.q;
+  var status = b.basis === 'own' ? 'Submitted ' + b.at + (b.late ? ' · lock ' + R0.lock : '') : b.basis === 'carry' ? (b.late ? 'Arrived ' + b.at + ', after the ' + R0.lock + ' lock · ' : 'No picks this race · ') + 'picks carried over from the ' + e.carry : 'No picks · carry-over removed by ABRC';
+  return '<div class="sheet-wrap" data-close="1"><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="bd-t"><div class="sheet-head"><div class="col"><h2 id="bd-t" class="display" style="font-size:26px">' + (mine ? 'Your points' : esc(b.name)) + ' · ' + b.total + ' pts</h2><span class="small muted">' + esc(status) + '</span></div><button class="back" data-close="1" aria-label="Close" style="margin:0"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>' +
+    '<div class="sheet-list" style="padding:0 20px 20px">' +
+    '<div class="tbl-row small muted" style="grid-template-columns:1.1fr 1fr 1fr 34px;min-height:32px;font-weight:600"><span>Pick</span><span>Picked</span><span>Result</span><span style="text-align:right">Pts</span></div>' +
+    b.lines.map(function (l) { return '<div class="tbl-row small" style="grid-template-columns:1.1fr 1fr 1fr 34px;min-height:48px;align-items:start;padding:8px 0"><span style="font-weight:600">' + esc(l.label) + '</span><span>' + esc(l.pick) + '</span><span class="' + (l.pending ? '' : 'muted') + '" style="' + (l.pending ? 'color:var(--warn)' : '') + '">' + esc(l.actual) + '</span><span class="big" style="font-size:18px;text-align:right;color:' + (l.pts ? 'var(--pos)' : 'var(--muted)') + '">' + l.pts + '</span></div>'; }).join('') +
+    '<div class="tbl-row" style="grid-template-columns:1fr auto"><span>Picks total</span><span class="big" style="font-size:20px">' + b.raw + '</span></div>' +
+    '<div class="tbl-row" style="grid-template-columns:1fr auto"><span>' + (b.basis === 'own' ? 'Joker' : 'Carry-over rate') + '</span><span class="big" style="font-size:20px">' + (b.basis === 'own' ? 'Not played' : '× ' + Math.round(b.factor * 100) + '%') + '</span></div>' +
+    '<div class="tbl-row" style="grid-template-columns:1fr auto"><span>Adjustments</span><span class="big" style="font-size:20px">None</span></div>' +
+    '<div class="tbl-row" style="grid-template-columns:1fr auto"><span style="font-weight:700">Race total</span><span class="big" style="font-size:24px;color:var(--accent-text)">' + b.total + '</span></div>' +
+    (player ? '<p class="small muted" style="margin:12px 0 0;line-height:1.45">Round 18 · United States GP. Worked out from the result confirmed by ABRC.</p>' : '<p class="small muted" style="margin:12px 0 0;line-height:1.45">Every line is worked out from the confirmed result. Changes made in the race review update this breakdown straight away and are logged.</p>') +
+    (mine ? (Q.sent ? '<div class="banner" role="status" style="margin-top:12px">Query sent to ABRC. You’ll get a reply with their decision.</div>'
+      : Q.open ? '<div class="col" style="gap:8px;margin-top:14px;padding:12px;border-radius:12px;background:var(--sunk)"><label class="label" for="ql">Which line?</label><select id="ql" data-qline>' + '<option value="">Choose…</option>' + b.lines.map(function (l) { return '<option' + (Q.line === l.label ? ' selected' : '') + '>' + esc(l.label) + '</option>'; }).join('') + '<option' + (Q.line === 'Something else' ? ' selected' : '') + '>Something else</option></select>' +
+        '<label class="label" for="qn">What looks wrong?</label><input id="qn" type="text" data-qnote value="' + esc(Q.note) + '" placeholder="e.g. Williams pitted on lap 1, not McLaren">' +
+        '<div class="row" style="gap:8px"><button class="btn ghost sm" data-q="cancel">Cancel</button><button class="btn primary sm" style="flex:1" data-q="send" ' + (Q.line ? '' : 'disabled') + '>Send to ABRC</button></div><span class="small muted">Queries close 48 hours after scores are confirmed.</span></div>'
+      : '<button class="btn ghost block" style="margin-top:14px" data-q="open">Query this score</button>') : '') +
+    '</div></div></div>';
+}
+
+function review() {
+  var R = S.review, sueAuto = R.lock >= '20:02', sue = sueAuto ? 'ontime' : R.sue;
+  var P = Object.keys(REV_PICKS).map(function (n) { var b = revScore(n); return [n, REV_BEFORE[n], b.total, b.how]; });
+  var before = P.slice().sort(function (a, b) { return b[1] - a[1]; }).map(function (x) { return x[0]; });
+  var after = P.slice().sort(function (a, b) { return (b[1] + b[2]) - (a[1] + a[2]); });
+  var open = (R.dotd ? 0 : 1) + (sue ? 0 : 1) + (R.out ? 0 : 1);
+  var btn = function (label, on, act) { return '<button class="btn sm ' + (on ? 'primary' : 'ghost') + '" aria-pressed="' + on + '" data-rev="' + act + '">' + label + '</button>'; };
+  var item = function (done, title, detail, btns) { return '<div class="col" style="gap:8px;padding:12px 0;border-top:1px solid var(--line)"><div class="row" style="align-items:flex-start"><span class="ic ' + (done ? 'ok' : 'warn') + '">' + (done ? '✓' : '!') + '</span><span class="col" style="gap:2px"><span style="font-weight:600">' + title + '</span><span class="small muted" style="line-height:1.45">' + detail + '</span></span></div>' + (btns ? '<div class="row" style="gap:6px;flex-wrap:wrap;padding-left:40px">' + btns + '</div>' : '') + '</div>'; };
+  return top('Race review', 'more') + '<main class="screen">' +
+    '<div class="col" style="gap:6px"><span class="label">Round 18 · United States GP</span><h1 class="display" style="font-size:34px">' + (R.confirmed ? 'Scores confirmed' : 'Review before scoring') + '</h1><div class="row" style="gap:6px;flex-wrap:wrap"><span class="tag ok">✓ Results pulled 21:42</span><span class="tag ' + (R.confirmed ? 'ok' : 'warn') + '">' + (R.confirmed ? 'Confirmed by Carl' : 'Held for review') + '</span></div></div>' +
+    '<section class="card" style="display:flex;flex-direction:column;gap:10px"><h2 class="display" style="font-size:22px">Lock time</h2><span class="small muted">Defaults to the scheduled start, 20:00. Move it if the start was delayed.</span>' +
+      '<label class="col" style="gap:4px"><span class="label">Lock time (UK)</span><input type="time" value="' + R.lock + '" data-revlock aria-label="Lock time"></label>' +
+      '<span class="small muted">Actual lights out from race data: <strong style="color:var(--text)">20:00</strong> (started on time)</span>' +
+      '<span class="small">' + (R.lock === '20:00' ? 'Entries after 20:00 are held as late and only count if the lock moves past them.' : 'Lock moved to ' + R.lock + '. Entries before then now count as on time.') + '</span></section>' +
+    '<section class="card"><div class="row" style="justify-content:space-between"><h2 class="display" style="font-size:22px">Decisions to check</h2><span class="small muted">' + (open ? open + ' to resolve' : 'All resolved') + '</span></div>' +
+      item(!!R.dotd, 'Driver of the day', R.dotd ? 'Entered: ' + flag(DRV[R.dotd].cc) + DRV[R.dotd].name : 'Not in the results feed. Enter it from the F1 result.', '<select data-revdotd aria-label="Driver of the day" style="max-width:260px"><option value="">Choose driver…</option>' + ['NOR', 'VER', 'PIA', 'LEC', 'HAM', 'RUS', 'ANT', 'ALO'].map(function (c) { return '<option value="' + c + '"' + (R.dotd === c ? ' selected' : '') + '>' + flag(DRV[c].cc) + DRV[c].name + '</option>'; }).join('') + '</select>') +
+      item(!!sue, 'Auntie Sue · picks arrived at 20:02', sueAuto ? 'On time under the new lock time. Her own picks score 11.' : sue === 'ontime' ? 'Accepted as on time. Her own picks score 11.' : sue === 'missed' ? 'Treated as missed. Singapore picks carried over at 50%.' : '2 minutes after the lock, so missed by default. Carry-over gives 4.', sueAuto ? '' : btn('Keep as missed', R.sue === 'missed', 'sue:missed') + btn('Accept as on time', R.sue === 'ontime', 'sue:ontime')) +
+      item(true, 'Grandad · no picks', R.grandad === 'keep' ? 'Singapore picks carried over. Would have scored 12, so 6 at 50%.' : 'Carry-over removed. 0 points.', btn('Keep carry-over', R.grandad === 'keep', 'grandad:keep') + btn('Remove', R.grandad === 'remove', 'grandad:remove')) +
+      item(!!R.out, 'First team to lose a car', 'Ocon (Haas) and Hamilton (Ferrari) both retired on lap 1. Race control messages put Ocon first by 4 seconds.', btn('Confirm Haas', R.out === 'ok', 'out:ok') + btn('Swap to Ferrari', R.out === 'swap', 'out:swap')) +
+    '</section>' +
+    (R.queryResolved ? '' : '<section class="card" style="display:flex;flex-direction:column;gap:10px;border-color:var(--warn)"><div class="row" style="justify-content:space-between"><h2 class="display" style="font-size:22px">Queries</h2><span class="tag warn">1 open</span></div>' +
+      '<div class="col" style="gap:4px"><span style="font-weight:600">Dad · First team to lose a car</span><span class="small muted" style="line-height:1.45">“Hamilton looked like he stopped first on TV. Shouldn’t I have the point for Ferrari?” · 21:58</span></div>' +
+      '<div class="row" style="gap:6px;flex-wrap:wrap"><button class="btn ghost sm" data-bd="Dad">See Dad’s points</button><button class="btn primary sm" data-rev="queryResolved:1">' + (R.out === 'swap' ? 'Resolve · swapped to Ferrari' : 'Resolve · keep Haas') + '</button></div>' +
+      '<span class="small muted">Resolving sends Dad a short reply with the decision and logs it.</span></section>') +
+    '<section class="card"><div class="row" style="justify-content:space-between;margin-bottom:6px"><h2 class="display" style="font-size:22px">Scores this race</h2><span class="small muted">Tap for the breakdown</span></div>' + P.map(function (p) { return '<button class="tbl-row" data-bd="' + esc(p[0]) + '" style="grid-template-columns:1fr auto 16px;width:100%;background:transparent;border-left:0;border-right:0;border-bottom:0;padding:0;text-align:left"><span class="col"><span style="font-weight:600">' + p[0] + '</span><span class="small" style="color:' + (p[3] === 'Own picks' ? 'var(--muted)' : 'var(--warn)') + '">' + p[3] + '</span></span><span class="big" style="font-size:22px">' + p[2] + '</span><span class="chev">›</span></button>'; }).join('') + '</section>' +
+    '<section class="card"><h2 class="display" style="font-size:22px;margin-bottom:6px">League table preview</h2>' + after.map(function (p, i) { var mv = before.indexOf(p[0]) - i; return '<div class="tbl-row" style="grid-template-columns:28px 1fr 40px 52px"><span class="big" style="font-size:18px">' + (i + 1) + '</span><span style="font-weight:600">' + p[0] + '</span><span class="' + (mv > 0 ? 'up' : mv < 0 ? 'down' : 'same') + '">' + (mv > 0 ? '▲' + mv : mv < 0 ? '▼' + (-mv) : '–') + '</span><span class="big" style="font-size:20px;text-align:right">' + (p[1] + p[2]) + '</span></div>'; }).join('') + '</section>' +
+    '</main><div class="dock"><div class="dock-in">' + (R.confirmed
+      ? '<div class="row"><button class="btn ghost sm" data-rev="reopen">Reopen</button><button class="btn primary" style="flex:1" data-go="followup" data-fu="post">Review the follow-up</button></div>'
+      : '<button class="btn primary block" data-rev="confirm" ' + (open ? 'disabled' : '') + '>' + (open ? open + (open === 1 ? ' item' : ' items') + ' to resolve' : 'Confirm scores') + '</button>') + '</div></div>';
+}
+
+var DRAFTS = {
+  post: [
+    'Good evening racers,\n\nHope you all enjoyed Austin. It wasn’t a classic from start to finish, but there was plenty going on underneath. Lando converted pole into the win and, to be fair to him, he managed the gap beautifully once he was clear at the first corner. Max kept him honest all afternoon and, on a different strategy, might have made it interesting if the Virtual Safety Car had fallen a lap later. Oscar held on for third after a long middle stint on the hards, which says a lot about how well McLaren look after their tyres at the moment. Charles and George completed the top five, and the lap one exits for Ocon and Hamilton took a couple of contenders out before anything had really started.\n\nIn the championship, that’s another big haul for Lando and the gap at the top is starting to look serious with five races to go. Mexico is a very different challenge though, and the thin air has a habit of mixing things up, so I wouldn’t be writing anybody off just yet.\n\nIn the league, the scores from today were:\n\nEllie – 18 points\nDad – 9 points\nJack – 22 points\nMum – 10 points\nGrandad – 6 points\nAuntie Sue – 11 points\n\nThe league split on the winner: Ellie and Jack backed Lando, while Dad went for Charles, Mum for Max and Auntie Sue for Oscar. The real difference came further down. Jack called Max in second, Norris for driver of the day and Williams first to pit, and ends up top scorer with 22. Well done Jack!! Ellie was close behind with 18.\n\nLone wolf of the week goes to Mum, the only one of us to call Piastri in third and Haas as the first team to lose a car, which in fairness was a brave pick. A nod too to Auntie Sue, the only one with Leclerc in fourth.\n\nA word on the rules. Grandad didn’t get his picks in, so his Singapore picks were carried over and halved, giving him 6. Auntie Sue’s picks arrived a couple of minutes after lights out, but ABRC have accepted them as on time, so her 11 stands.\n\nNo jokers this week, although Dad will be wondering, as playing it today would have kept him top of the table!!\n\nSo what does this do to the league?\n\n1st – Ellie – with a total of 286 points (up from 2nd last week)\n2nd – Dad – with a total of 279 points (down from 1st)\n3rd – Jack – with a total of 262 points (up from 4th)\n4th – Mum – with a total of 251 points (down from 3rd)\n5th – Grandad – with a total of 233 points\n6th – Auntie Sue – with a total of 219 points\n\nJust 7 points between the top two with five races left, so it’s all to play for.\n\nNext weekend we head to the Autódromo Hermanos Rodríguez for the Mexico City Grand Prix. It’s the highest race of the year, the long run down to Turn 1 always makes for a lively start, and the stadium section at the end of the lap has one of the best atmospheres on the calendar. Picks lock at lights out on Sunday, so get them in early.\n\nHave a good rest of your weekends!!\n\nABRC',
+    'Good evening racers,\n\nWhat a race in Austin. Lando converted pole into the win, Max kept him honest all afternoon and Oscar held on for third after the Virtual Safety Car.\n\nHere are today’s league scores:\n\nEllie – 18 points\nDad – 9 points\nJack – 22 points\nMum – 10 points\nGrandad – 6 points\nAuntie Sue – 11 points\n\nCongratulations to Jack, top scorer with 22. Ellie was next best with 18, which was enough to take the lead. Dad will be wondering about that joker, as playing it today would have kept him top of the table!!\n\nSo what does this do to the league?\n\nEllie leads with 286, Dad is 2nd with 279 and Jack 3rd with 262. Mum drops to 4th with 251, Grandad is 5th with 233 and Auntie Sue 6th with 219.\n\nMexico City is next weekend. Picks lock at lights out on Sunday.\n\nHave a good rest of your weekends!!\n\nABRC'
+  ],
+  pre: ['Good morning racers,\n\nThe F1 circus heads to Mexico City this weekend, and the Autódromo Hermanos Rodríguez is always a bit different. At over 2,200 metres the thin air means less downforce and less cooling, so expect slipstreaming down the long straight and a few nervous engineers.\n\nThe forecast for Sunday is 24°C and partly cloudy at lights out, with only a 10% chance of rain, so a dry race looks likely.\n\nIn the league, Ellie leads with 286, Dad is 7 points behind on 279 and Jack is 3rd with 262. Five races to go and plenty of jokers still in hand, so nothing is settled yet!!\n\nPicks lock at lights out on Sunday, 20:00 UK time. The grid will be on the picks screen after qualifying on Saturday.\n\nGood luck all!!\n\nABRC']
+};
+function fuText() {
+  var F = S.fu, list = DRAFTS[F.kind], base = list[F.version % list.length];
+  if (F.note) { var i = base.indexOf('\n\n'), nt = F.note.trim(); nt = nt.charAt(0).toUpperCase() + nt.slice(1); if (!/[.!?]$/.test(nt)) nt += '.'; base = base.slice(0, i) + '\n\n' + nt + base.slice(i); }
+  return F.edited !== null ? F.edited : base;
+}
+function followup() {
+  var F = S.fu, pre = F.kind === 'pre', text = fuText(), wa = 'https://wa.me/?text=' + encodeURIComponent(text);
+  var closed = F.shared || F.skipped;
+  return top(pre ? 'Pre-race update' : 'Race follow-up', 'more') + '<main class="screen">' +
+    '<div class="col" style="gap:6px"><span class="label">' + (pre ? 'Round 19 · Mexico City GP · pre-race' : 'Round 18 · United States GP') + '</span><h1 class="display" style="font-size:34px">' + (F.skipped ? 'Not shared' : F.shared ? 'Shared' : 'Ready to review') + '</h1>' +
+    '<div class="row" style="gap:6px;flex-wrap:wrap">' + (pre ? ['Calendar confirmed', 'Forecast loaded', 'Draft written'] : ['Results confirmed', 'Points calculated', 'Draft written']).map(function (x) { return '<span class="tag ok">✓ ' + x + '</span>'; }).join('') + '</div></div>' +
+    (closed ? '' : '<section class="card" style="display:flex;flex-direction:column;gap:8px;background:var(--sunk)"><label class="label" for="note">Your personal note (optional)</label><input id="note" type="text" value="' + esc(F.noteInput) + '" data-funote placeholder="e.g. Missed the race, stuck in traffic after the match"><button class="btn ghost sm" style="align-self:flex-start" data-fu-act="note">Add to the draft</button></section>') +
+    '<div class="row" style="justify-content:space-between"><label class="label" for="draft">' + (F.edited !== null ? 'Draft · edited' : 'Draft in Carl’s voice') + '</label><span class="small muted">' + text.length + ' characters</span></div>' +
+    '<textarea id="draft" data-fuedit ' + (closed ? 'readonly' : '') + '>' + esc(text) + '</textarea>' +
+    (closed ? '' : '<div class="row" style="gap:8px"><button class="btn ghost" style="flex:1" data-fu-act="regen">Write another version</button><button class="btn ghost" style="flex:1" data-fu-act="copy">Copy text</button></div><p class="small muted" style="margin:0;line-height:1.45">Written from confirmed data only. Sealed season nominations are never included.</p>') +
+    (pre ? '' : shareCardSection()) +
+    '</main><div class="dock"><div class="dock-in">' + (F.skipped
+      ? '<div class="row"><span class="col" style="flex:1"><span style="font-weight:600">Not shared</span><span class="small muted">Skipped by Carl · kept in the log</span></span><button class="btn ghost sm" data-fu-act="unskip">Undo</button></div>'
+      : F.shared ? '<div class="row" role="status"><span class="ic ok">✓</span><span class="col" style="flex:1"><span style="font-weight:600">Approved and shared</span><span class="small muted">By Carl</span></span><a class="btn ghost sm" href="' + wa + '" target="_blank" rel="noopener">Share again</a></div>'
+      : '<a class="btn wa block" href="' + wa + '" target="_blank" rel="noopener" data-fu-act="share">Approve and share to WhatsApp</a><button class="btn block" style="background:transparent;color:var(--muted);min-height:40px;font-weight:600" data-fu-act="skip">Don’t share this one</button>') + '</div></div>';
+}
+
+/* ---------- Sheet ---------- */
+function sheet() {
+  var sh = S.sheet; if (!sh) return '';
+  var opts = [], title = '', hint = '', current;
+  if (sh.type === 'pick') {
+    var sess = S.sprint ? S.session : 'gp', def = DEFS[sess].filter(function (d) { return d.k === sh.key; })[0], pk = S.picks[sess];
+    title = def.label; current = pk[def.k];
+    var used = {}; if (def.top) DEFS[sess].forEach(function (d) { if (d.top && d.k !== def.k && pk[d.k]) used[pk[d.k]] = d.pos; });
+    if (def.kind === 'team') { hint = def.hint; opts = TEAM_LIST.map(function (t) { return { v: t, name: t, sub: TEAMS[t][1], color: TEAMS[t][0] }; }); }
+    else { var g = GRID[sess], showPos = S.qualiDone || sess === 'sprint'; hint = showPos ? 'Listed in starting grid order' : 'Grid order appears after qualifying'; opts = (showPos ? g : DRIVERS.map(function (d) { return d[0]; })).map(function (c, i) { var d = DRV[c]; return { v: c, pre: showPos ? 'P' + (i + 1) : '', name: flag(d.cc) + d.name, team: d.team, color: d.color, taken: used[c] }; }); }
+  } else {
+    var n = NOMS.filter(function (x) { return x.k === sh.key; })[0]; title = n.label; current = S.noms[n.k]; hint = n.pts + ' points';
+    opts = n.kind === 'team' ? TEAM_LIST.map(function (t) { return { v: t, name: t, sub: TEAMS[t][1], color: TEAMS[t][0] }; }) : DRIVERS.map(function (d) { var x = DRV[d[0]]; return { v: x.code, name: flag(x.cc) + x.name, team: x.team, color: x.color }; });
+  }
+  return '<div class="sheet-wrap" data-close="1"><div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sh-t"><div class="sheet-head"><div class="col"><h2 id="sh-t" class="display" style="font-size:26px">' + esc(title) + '</h2><span class="small muted">' + esc(hint) + '</span></div><button class="back" data-close="1" aria-label="Close" style="margin:0"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>' +
+    '<div class="sheet-list">' + opts.map(function (o) { var sel = current === o.v; return '<button class="opt" data-choose="' + esc(o.v) + '" aria-selected="' + sel + '" ' + (o.taken ? 'disabled' : '') + '>' + (o.pre !== undefined ? '<span class="big muted" style="width:30px;font-size:16px">' + o.pre + '</span>' : '') + '<span class="chipbar" style="height:30px;background:' + o.color + '"></span><span class="col" style="flex:1;gap:3px"><span style="font-weight:600">' + esc(o.name) + '</span>' + (o.team ? '<span>' + teamPill(o.team) + '</span>' : '<span class="small muted">' + esc(o.sub) + '</span>') + '</span><span class="small" style="font-weight:600;color:' + (sel ? 'var(--pos)' : 'var(--muted)') + '">' + (o.taken ? 'Your ' + o.taken : sel ? 'Selected' : '') + '</span></button>'; }).join('') + '</div></div></div>';
+}
+
+function nav() {
+  var items = [['home', 'Home', '<path d="M4 11l8-7 8 7v9h-5v-6H9v6H4z"/>'], ['picks', 'Picks', '<path d="M5 4h14v16H5z M9 9h6 M9 13h6 M9 17h3"/>'], ['season', 'Season', '<path d="M5 20V10 M12 20V4 M19 20v-7"/>'], ['news', 'News', '<path d="M4 5h13v14H6a2 2 0 0 1-2-2z M17 9h3v8a2 2 0 0 1-2 2 M8 9h5 M8 13h5 M8 17h3"/>'], ['more', S.admin ? 'ABRC' : 'More', '<circle cx="6" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="18" cy="12" r="1.6"/>']];
+  var active = { stats: 'home', news: 'news', home: 'home', picks: 'picks', season: 'season', nominations: 'home', more: 'more', rules: 'more', review: 'more', followup: 'more', weekend: 'more' }[S.route];
+  return '<nav class="nav" aria-label="Main"><div class="nav-in">' + items.map(function (i) { return '<a href="#' + i[0] + '" data-go="' + i[0] + '"' + (active === i[0] ? ' aria-current="page"' : '') + '><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + i[2] + '</svg>' + i[1] + '</a>'; }).join('') + '</div></nav>';
+}
+
+var VIEWS = { stats: stats, news: news, weekend: weekend, signin: signin, home: home, picks: picks, season: season, more: more, nominations: nominations, rules: rules, review: review, followup: followup };
+function render() {
+  document.body.classList.toggle('no-nav', S.route === 'signin');
+  var docked = ['picks', 'nominations', 'review', 'followup'].indexOf(S.route) >= 0 || (S.route === 'rules' && S.admin && S.rd && Object.keys(S.rd).some(function (k) { return S.rd[k] !== S.rdBase[k]; }));
+  document.body.classList.toggle('has-dock', docked);
+  var focusId = document.activeElement && document.activeElement.id, val = document.activeElement && document.activeElement.value, pos = document.activeElement && document.activeElement.selectionStart;
+  document.getElementById('root').innerHTML = '<div class="app">' + VIEWS[S.route]() + '</div>' + (S.route === 'signin' ? '' : nav()) + sheet() + (S.bd ? breakdownSheet() : '') + (S.aboutSheet ? aboutSheet() : '') + (S.splitSheet ? splitSheet() : '') + (S.tour && S.route !== 'signin' ? tourSheet() : '') + (S.toast ? '<div class="toast" role="status">' + esc(S.toast) + '</div>' : '');
+  if (S.route === 'followup') paintShareCard();
+  if (focusId) { var el = document.getElementById(focusId); if (el) { el.focus(); try { el.setSelectionRange(pos, pos); } catch (e) {} } }
+}
+
+document.addEventListener('click', function (e) {
+  var t = e.target.closest('[data-news],[data-newsf],[data-split],[data-card],[data-wk],[data-wkmine],[data-about],[data-form],[data-fp],[data-theme-set],[data-tour-close],[data-tour-open],[data-q],[data-bd],[data-focus],[data-signin],[data-step],[data-rules],[data-go],[data-open],[data-nom],[data-choose],[data-close],[data-act],[data-session],[data-season],[data-toggle],[data-jokers],[data-rev],[data-fu-act]');
+  if (!t) return;
+  if (t.dataset.close && e.target.closest('.sheet') && !e.target.closest('[data-close].back')) { if (!t.classList.contains('back') && t.classList.contains('sheet-wrap')) return; }
+  if (t.dataset.bd) { S.bd = t.dataset.bd; S.bdMode = t.dataset.mode || 'admin'; render(); return; }
+  if (t.dataset.news) { S.newsRevealed = true; render(); return; }
+  if (t.dataset.newsf) { S.newsFilter = t.dataset.newsf; render(); return; }
+  if (t.dataset.split) { S.splitSheet = true; render(); return; }
+  if (t.dataset.card) {
+    var c = S.cardCanvas; if (!c) return;
+    if (t.dataset.card === 'share' && c.toBlob) {
+      c.toBlob(function (blob) {
+        try { var file = new File([blob], 'abrc-round-18.png', { type: 'image/png' });
+          if (navigator.canShare && navigator.canShare({ files: [file] })) { navigator.share({ files: [file], title: 'ABRC Formula 1 League · Round 18' }).catch(function () {}); return; } } catch (err) {}
+        toast('Sharing isn’t available here. Use Save image instead.');
+      });
+      return;
+    }
+    try { var a = document.createElement('a'); a.href = S.cardUrl; a.download = 'abrc-round-18.png'; document.body.appendChild(a); a.click(); a.remove(); toast('Image saved'); } catch (err) { toast('Press and hold the image to save it'); }
+    return;
+  }
+  if (t.dataset.wk) { S.wk = t.dataset.wk; render(); return; }
+  if (t.dataset.wkmine) { S.wkMine = !S.wkMine; render(); return; }
+  if (t.dataset.about) { S.aboutSheet = true; render(); return; }
+  if (t.dataset.form) { S.formTab = t.dataset.form; render(); return; }
+  if (t.dataset.fp) { S.fp = t.dataset.fp; render(); return; }
+  if (t.dataset.themeSet) { S.theme = t.dataset.themeSet; try { localStorage.setItem('abrc-theme', S.theme); } catch (err) {} applyTheme(); render(); return; }
+  if (t.dataset.tourClose) { if (t.classList.contains('sheet-wrap') && e.target !== t) return; S.tour = false; try { localStorage.setItem('abrc-tour-seen', '1'); } catch (err) {} render(); return; }
+  if (t.dataset.tourOpen) { S.tour = true; render(); return; }
+  if (t.dataset.q) { var Q = S.q; if (t.dataset.q === 'open') Q.open = true; if (t.dataset.q === 'cancel') Q.open = false; if (t.dataset.q === 'send' && Q.line) { Q.sent = true; Q.open = false; } render(); return; }
+  if (t.dataset.focus) { S.chartFocus = S.chartFocus === t.dataset.focus ? null : t.dataset.focus; render(); return; }
+  if (t.dataset.signin) {
+    var a1 = t.dataset.signin, G = S.signin;
+    if (a1 === 'send') G.sent = true;
+    if (a1 === 'resend') { toast('Sent again'); return; }
+    if (a1 === 'change') G.sent = false;
+    if (a1 === 'open') { G.sent = false; S.signedIn = true; go('home'); toast('Signed in. You’ll stay signed in on this phone.'); return; }
+    if (a1 === 'out') { S.signedIn = false; G.sent = false; go('signin'); return; }
+    render(); return;
+  }
+  if (t.dataset.step) {
+    var p = t.dataset.step.split(':'), k = p[0], dlt = +p[1], lim = k === 'carry' ? [0, 100] : k === 'jokers' ? [0, 10] : [0, 50];
+    S.rd[k] = Math.min(lim[1], Math.max(lim[0], S.rd[k] + dlt * (k === 'carry' ? 5 : 1))); render(); return;
+  }
+  if (t.dataset.rules === 'discard') { S.rd = JSON.parse(JSON.stringify(S.rdBase)); S.applyFrom = 'next'; render(); return; }
+  if (t.dataset.rules === 'save') {
+    ['gp', 'sprint'].forEach(function (g) { DEFS[g].forEach(function (d) { d.pts = S.rd[g + '.' + d.k]; }); });
+    NOMS.forEach(function (n) { n.pts = S.rd['nom.' + n.k]; });
+    S.jokersTotal = S.rd.jokers; S.jokersLeft = Math.min(S.jokersLeft, S.jokersTotal); S.carry = S.rd.carry;
+    S.rdBase = JSON.parse(JSON.stringify(S.rd)); var all = S.applyFrom === 'all'; S.applyFrom = 'next';
+    toast(all ? 'Rules saved. Season rescored.' : 'Rules saved. They apply from Mexico City.'); return;
+  }
+  if (t.dataset.go) { e.preventDefault(); if (t.dataset.fu && t.dataset.fu !== S.fu.kind) S.fu = { kind: t.dataset.fu, version: 0, edited: null, note: '', noteInput: '', shared: false, skipped: false }; go(t.dataset.go); return; }
+  if (t.dataset.open) { S.sheet = { type: 'pick', key: t.dataset.open }; render(); return; }
+  if (t.dataset.nom) { S.sheet = { type: 'nom', key: t.dataset.nom }; render(); return; }
+  if (t.dataset.choose !== undefined) {
+    if (S.sheet.type === 'pick') { var sess = S.sprint ? S.session : 'gp'; S.picks[sess][S.sheet.key] = t.dataset.choose; S.submitted[sess] = false; }
+    else { S.noms[S.sheet.key] = t.dataset.choose; S.nomsSealed = false; }
+    S.sheet = null; render(); return;
+  }
+  if (t.dataset.close) { if (t.classList.contains('sheet-wrap') && e.target !== t) return; S.sheet = null; S.bd = null; S.aboutSheet = false; S.splitSheet = false; render(); return; }
+  if (t.dataset.session) { S.session = t.dataset.session; render(); return; }
+  if (t.dataset.season) { S.seasonTab = t.dataset.season; render(); return; }
+  if (t.dataset.toggle) { S[t.dataset.toggle] = !S[t.dataset.toggle]; if (t.dataset.toggle === 'postRace' || t.dataset.toggle === 'spoilerShield') S.newsRevealed = false; if (t.dataset.toggle === 'sprint') S.session = S.sprint ? 'sprint' : 'gp'; render(); return; }
+  if (t.dataset.jokers) { S.jokersLeft = +t.dataset.jokers; if (!S.jokersLeft) S.joker = false; render(); return; }
+  if (t.dataset.rev) {
+    var a = t.dataset.rev.split(':'), R = S.review;
+    if (a[0] === 'confirm') { R.confirmed = true; toast('Scores confirmed. The table is updated.'); return; }
+    if (a[0] === 'queryResolved') { R.queryResolved = true; toast('Query resolved. Dad has been sent the decision.'); return; }
+    if (a[0] === 'reopen') R.confirmed = false; else { R[a[0]] = a[1]; R.confirmed = false; }
+    render(); return;
+  }
+  if (t.dataset.fuAct) {
+    var F = S.fu, act = t.dataset.fuAct;
+    if (act === 'regen') { F.version++; F.edited = null; }
+    if (act === 'note' && F.noteInput.trim()) { F.note = F.noteInput.trim(); F.edited = null; }
+    if (act === 'copy') { try { navigator.clipboard.writeText(fuText()); } catch (err) {} toast('Copied'); return; }
+    if (act === 'skip') F.skipped = true;
+    if (act === 'unskip') F.skipped = false;
+    if (act === 'share') { F.shared = true; setTimeout(render, 50); return; }
+    render(); return;
+  }
+  var act2 = t.dataset.act;
+  if (act2 === 'grid') S.showGrid = !S.showGrid;
+  if (act2 === 'joker' && S.jokersLeft > 0) { S.joker = !S.joker; S.submitted.gp = false; S.submitted.sprint = false; }
+  if (act2 === 'submit') { var ss = S.sprint ? S.session : 'gp'; S.submitted[ss] = true; S.submittedAt[ss] = Date.now(); toast('Picks submitted ' + ukTime(S.submittedAt[ss])); return; }
+  if (act2 === 'edit') S.submitted[S.sprint ? S.session : 'gp'] = false;
+  if (act2 === 'seal') { S.nomsSealed = true; toast('Nominations sealed'); return; }
+  if (act2 === 'unseal') S.nomsSealed = false;
+  render();
+});
+document.addEventListener('input', function (e) {
+  var t = e.target;
+  if (t.hasAttribute('data-fuedit')) { S.fu.edited = t.value; }
+  if (t.hasAttribute('data-funote')) { S.fu.noteInput = t.value; }
+  if (t.hasAttribute('data-qnote')) { S.q.note = t.value; }
+  if (t.hasAttribute('data-signin-email')) { var was = /.+@.+\..+/.test(S.signin.email); S.signin.email = t.value; if (was !== /.+@.+\..+/.test(t.value)) render(); }
+});
+document.addEventListener('change', function (e) {
+  var t = e.target;
+  if (t.hasAttribute('data-revlock')) { S.review.lock = t.value || '20:00'; S.review.confirmed = false; render(); }
+  if (t.hasAttribute('data-applyfrom')) { S.applyFrom = t.value; render(); }
+  if (t.hasAttribute('data-qline')) { S.q.line = t.value; render(); }
+  if (t.hasAttribute('data-revdotd')) { S.review.dotd = t.value; S.review.confirmed = false; render(); }
+});
+document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && (S.sheet || S.bd || S.tour || S.aboutSheet || S.splitSheet)) { S.sheet = null; S.bd = null; S.tour = false; S.aboutSheet = false; S.splitSheet = false; render(); } });
+window.addEventListener('hashchange', function () { readHash(); S.sheet = null; render(); });
+setInterval(function () { if (S.route === 'home' && !document.activeElement.matches('input,textarea,select')) render(); }, 30000);
+try { if (localStorage.getItem('abrc-tour-seen')) S.tour = false; var th = localStorage.getItem('abrc-theme'); if (th) S.theme = th; } catch (err) {}
+function applyTheme() { var el = document.documentElement; if (S.theme === 'auto') el.removeAttribute('data-theme'); else el.setAttribute('data-theme', S.theme); }
+applyTheme();
+readHash(); render();
+})();
+</script>
+</body>
+</html>
